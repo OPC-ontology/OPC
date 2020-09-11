@@ -18,13 +18,373 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl"/>
         <dc:creator xml:lang="en">Wes A. Schafer</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:description xml:lang="en">OPC is a formal ontology that aims to .... in the area of process chemistry.</dc:description>
+        <dc:description xml:lang="en">OPC is a formal ontology that aims to standardly represent entities and relations among entities in the domain of process chemistry.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>08-12-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <oboInOwl:creation_date>09-11-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.09</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">synthetic chemical process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000008"/>
+        <rdfs:label xml:lang="en">full factorial design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>DoE</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Design of Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115>A direct information entity that is the output of DoE and defines how experiment is designed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">design space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000003"/>
+        <rdfs:label xml:lang="en">DoE based on factorial design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:label xml:lang="en">factorial design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:label xml:lang="en">route scouting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:label xml:lang="en">process optimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:label xml:lang="en">process maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:label xml:lang="en">synthesis reaction time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000118>CQA</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">critical quality attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000013"/>
+        <rdfs:label xml:lang="en">chemical CQA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label xml:lang="en">process profile specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000015"/>
+        <obo:IAO_0000118>CPP specification</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">critical process parameter specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000016"/>
+        <rdfs:label xml:lang="en">temperature profile CCP specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:label xml:lang="en">quality specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000018"/>
+        <rdfs:label xml:lang="en">CQA specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000019"/>
+        <rdfs:label xml:lang="en">chemical CQA specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">role of chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:label xml:lang="en">starting material role in synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:label xml:lang="en">intermediate material role in synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">chemical entity (ChEBI)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:label xml:lang="en">chemical product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000025"/>
+        <rdfs:label xml:lang="en">commercial chemical product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <rdfs:label xml:lang="en">critical process profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000027"/>
+        <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:label xml:lang="en">starting material for synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:label xml:lang="en">intermediate material for synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:label xml:lang="en">chemical impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000029"/>
+        <rdfs:label xml:lang="en">GMP starting material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:label xml:lang="en">commercial synthetic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">temperature measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">stirring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">inserting material</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
