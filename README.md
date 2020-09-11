@@ -9,6 +9,6 @@ OPC is a collaborative project between Merck and Unversity of Michgan ....
 comming soon ...
 
 ## OPC Sources
-OPC OWL source: https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl?
+OPC OWL source: https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl
 
 
