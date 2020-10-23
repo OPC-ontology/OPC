@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>10-16-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.24</owl:versionInfo>
+        <oboInOwl:creation_date>10-23-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -239,7 +239,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000015"/>
+        <obo:IAO_0000115>A process profile specification that is associated with a critical process parameter (CPP). Critical process parameters (CPPs) in pharmaceutical manufacturing are key variables affecting the production process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>CPP specification</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Critical_process_parameters</obo:IAO_0000119>
+        <rdfs:comment>CPP &apos;has facet&apos; some specification 
+(note: like has part, but it is for info).</rdfs:comment>
         <rdfs:label xml:lang="en">critical process parameter specification</rdfs:label>
     </owl:Class>
     
@@ -248,8 +253,9 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000016"/>
-        <rdfs:label xml:lang="en">temperature profile CCP specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000015"/>
+        <rdfs:comment>for example, a specification requires 60C of temperature. However, for a particular synthesis process, the termperature may differ, e.g., 55C.</rdfs:comment>
+        <rdfs:label xml:lang="en">temperature specification</rdfs:label>
     </owl:Class>
     
 
@@ -352,21 +358,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPC_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <obo:IAO_0000115>A process profile that is associated with a critical process parameter (CPP). Critical process parameters (CPPs) in pharmaceutical manufacturing are key variables affecting the production process.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Critical_process_parameters</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">critical process profile in synthesis process</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPC_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000048"/>
         <obo:IAO_0000115>critical process profile in synthesis process that is about temperature</obo:IAO_0000115>
         <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
     </owl:Class>
@@ -527,6 +522,71 @@
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=210.1</obo:IAO_0000119>
         <rdfs:label xml:lang="en">GMP specification of synthetic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:comment>critical process profile in synthesis process that is about stirring</rdfs:comment>
+        <rdfs:label xml:lang="en">stirring profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:comment>critical process profile in synthesis process that is about material flow</rdfs:comment>
+        <rdfs:label xml:lang="en">material flow profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <obo:IAO_0000115>A process profile that is associated with a synthesis process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">process profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An application as requested to do something.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">process chemistry filing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <rdfs:label xml:lang="en">AFO_303281: quality process profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000047"/>
+        <rdfs:label xml:lang="en">quality process profile in synthesis process</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
