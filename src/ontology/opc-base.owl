@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>10-23-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.25</owl:versionInfo>
+        <oboInOwl:creation_date>10-30-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -43,6 +43,14 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000007">
         <rdfs:label xml:lang="en">monotropically related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000027">
+        <rdfs:label xml:lang="en">profile of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -530,8 +538,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPC_0000027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a process profile that represents the number of revolution of stirs given a specific time period</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">stirring profile in synthesis process</obo:IAO_0000118>
         <rdfs:comment>critical process profile in synthesis process that is about stirring</rdfs:comment>
-        <rdfs:label xml:lang="en">stirring profile in synthesis process</rdfs:label>
+        <rdfs:label>stir rate profile</rdfs:label>
     </owl:Class>
     
 
@@ -587,6 +604,39 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000047"/>
         <rdfs:label xml:lang="en">quality process profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <obo:IAO_0000115>Reaction rate is the rate of the changing concentration of a product during a reaction process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Reaction_rate</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">reaction rate profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">filtering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A basic and unit step in a process</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unit_operation</obo:IAO_0000119>
+        <rdfs:comment>In chemical engineering and related fields, a unit operation is a basic step in a process. Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
+        <rdfs:label xml:lang="en">unit operation</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
