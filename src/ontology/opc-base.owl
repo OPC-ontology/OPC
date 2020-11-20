@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>10-30-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.26</owl:versionInfo>
+        <oboInOwl:creation_date>11-20-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -637,6 +637,122 @@
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unit_operation</obo:IAO_0000119>
         <rdfs:comment>In chemical engineering and related fields, a unit operation is a basic step in a process. Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
         <rdfs:label xml:lang="en">unit operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>a process by which a solid forms, where the atoms or molecules are highly organized into a structure known as a crystal.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">crystallization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <obo:IAO_0000118>polymorphism</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymorphism_(materials_science)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">polymorph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000053"/>
+        <obo:IAO_0000115>a substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymer</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>a process that controls the impurities (organic, inorganic, elemental, or residual solvents) of pharmaceutical substances produced by chemical syntheses to ensure the desired product quality.</obo:IAO_0000115>
+        <obo:IAO_0000118>fate and purge</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">fate and purge of impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">purge of impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
+        <rdfs:label xml:lang="en">purge of impurity by crystallization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
+        <rdfs:label xml:lang="en">purge of impurity by extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000063"/>
+        <rdfs:label xml:lang="en">fate of impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">chemical quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
+        <rdfs:label xml:lang="en">drug purity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
+        <rdfs:label xml:lang="en">drug impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">fate</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
