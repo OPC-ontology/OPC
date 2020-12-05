@@ -19,8 +19,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>09-11-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.09</owl:versionInfo>
+        <oboInOwl:creation_date>12-04-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1108,6 +1108,41 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label>has value specification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000007">
+        <rdfs:label xml:lang="en">monotropically related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000027">
+        <rdfs:label xml:lang="en">profile of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000037 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000037">
+        <rdfs:label xml:lang="en">enantiotropically related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000038 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000038">
+        <obo:IAO_0000115>A solvate is a solvate of some chemical as solvant</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Solvation</obo:IAO_0000119>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Solvent</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">is solvate of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -6172,22 +6207,18 @@ that has_part some material entity is a material entity. If we add as equivalent
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000034"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000035"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000036"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000115>Synthesis is a planned material process that combines, changes or converts material to produce a new material. [Allotrope]</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">synthetic chemical process</rdfs:label>
     </owl:Class>
     
@@ -6265,6 +6296,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route scouting</rdfs:label>
     </owl:Class>
     
@@ -6274,6 +6306,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process optimization</rdfs:label>
     </owl:Class>
     
@@ -6283,6 +6316,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process maintenance</rdfs:label>
     </owl:Class>
     
@@ -6329,7 +6363,12 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000015"/>
+        <obo:IAO_0000115>A process profile specification that is associated with a critical process parameter (CPP). Critical process parameters (CPPs) in pharmaceutical manufacturing are key variables affecting the production process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>CPP specification</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Critical_process_parameters</obo:IAO_0000119>
+        <rdfs:comment>CPP &apos;has facet&apos; some specification 
+(note: like has part, but it is for info).</rdfs:comment>
         <rdfs:label xml:lang="en">critical process parameter specification</rdfs:label>
     </owl:Class>
     
@@ -6338,8 +6377,9 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000016"/>
-        <rdfs:label xml:lang="en">temperature profile CCP specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000015"/>
+        <rdfs:comment>for example, a specification requires 60C of temperature. However, for a particular synthesis process, the termperature may differ, e.g., 55C.</rdfs:comment>
+        <rdfs:label xml:lang="en">temperature specification</rdfs:label>
     </owl:Class>
     
 
@@ -6410,7 +6450,22 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000025">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000039"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A chemical entity that is the end point product generated from a synthetic chemcial process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Wes Schafer</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Product_(chemistry)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical product</rdfs:label>
     </owl:Class>
     
@@ -6420,16 +6475,9 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000025"/>
+        <obo:IAO_0000117>A chemical product that is used for commercial purpose.</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">commercial chemical product</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPC_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <rdfs:label xml:lang="en">critical process profile in synthesis process</rdfs:label>
     </owl:Class>
     
 
@@ -6437,7 +6485,8 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000048"/>
+        <obo:IAO_0000115>critical process profile in synthesis process that is about temperature</obo:IAO_0000115>
         <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -6446,6 +6495,12 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000029">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000022"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
         <rdfs:label xml:lang="en">starting material for synthesis</rdfs:label>
     </owl:Class>
@@ -6455,6 +6510,12 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000030">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000023"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
         <rdfs:label xml:lang="en">intermediate material for synthesis</rdfs:label>
     </owl:Class>
@@ -6464,7 +6525,22 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000031">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000040"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Chemical substance that is inside a confined amount of liquid, gas, or solid, and differs from the chemical composition of the material or compound. Impurities are either naturally occurring or added during synthesis of a chemical or commercial product. During production, impurities may be purposely, accidentally, inevitably, or incidentally added into the substance.</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Wes Schafer</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Impurity</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical impurity</rdfs:label>
     </owl:Class>
     
@@ -6483,7 +6559,26 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
-        <rdfs:label xml:lang="en">commercial synthetic process</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000042"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>commercial synthetic process</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">GMP synthetic process</rdfs:label>
     </owl:Class>
     
 
@@ -6511,6 +6606,281 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label xml:lang="en">inserting material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:label xml:lang="en">chemical product role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:label xml:lang="en">chemical impurity role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">GLP synthetic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>A plan specification that specifies the action and objective of a synthetic process, as defined in CFR - Code of Federal Regulations Title 21.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=210.1</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">GMP specification of synthetic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OPC_0000027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a process profile that represents the number of revolution of stirs given a specific time period</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">stirring profile in synthesis process</obo:IAO_0000118>
+        <rdfs:comment>critical process profile in synthesis process that is about stirring</rdfs:comment>
+        <rdfs:label>stir rate profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:comment>critical process profile in synthesis process that is about material flow</rdfs:comment>
+        <rdfs:label xml:lang="en">material flow profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <obo:IAO_0000115>A process profile that is associated with a synthesis process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">process profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An application as requested to do something.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">process chemistry filing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <rdfs:label xml:lang="en">AFO_303281: quality process profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000047"/>
+        <rdfs:label xml:lang="en">quality process profile in synthesis process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <obo:IAO_0000115>Reaction rate is the rate of the changing concentration of a product during a reaction process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Reaction_rate</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">reaction rate profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">filtering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A basic and unit step in a process</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unit_operation</obo:IAO_0000119>
+        <rdfs:comment>In chemical engineering and related fields, a unit operation is a basic step in a process. Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
+        <rdfs:label xml:lang="en">unit operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>a process by which a solid forms, where the atoms or molecules are highly organized into a structure known as a crystal.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">crystallization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <obo:IAO_0000118>polymorphism</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymorphism_(materials_science)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">polymorph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000053"/>
+        <obo:IAO_0000115>a substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymer</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>a process that controls the impurities (organic, inorganic, elemental, or residual solvents) of pharmaceutical substances produced by chemical syntheses to ensure the desired product quality.</obo:IAO_0000115>
+        <obo:IAO_0000118>fate and purge</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">fate and purge of impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">purge of impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
+        <rdfs:label xml:lang="en">purge of impurity by crystallization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
+        <rdfs:label xml:lang="en">purge of impurity by extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000063"/>
+        <rdfs:label xml:lang="en">fate of impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">chemical quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
+        <rdfs:label xml:lang="en">drug purity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
+        <rdfs:label xml:lang="en">drug impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">fate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <obo:IAO_0000115>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:comment>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</rdfs:comment>
+        <rdfs:label xml:lang="en">antisolvent role</rdfs:label>
     </owl:Class>
     
 
@@ -6852,10 +7222,13 @@ This interpretation is *not* the same as an at-all-times relation
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-04-23</owl:versionInfo>
     </owl:NamedIndividual>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
@@ -6888,13 +7261,10 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     
 
@@ -6908,56 +7278,56 @@ This interpretation is *not* the same as an at-all-times relation
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
-        <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Leonard Jacuzzo</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
-        <dc:contributor>Bjoern Peters</dc:contributor>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <dc:contributor>Melanie Courtot</dc:contributor>
+        <dc:contributor>Bjoern Peters</dc:contributor>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <dc:contributor>Fabian Neuhaus</dc:contributor>
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
-        <dc:contributor>Randall Dipert</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <dc:contributor>Fabian Neuhaus</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
-        <dc:contributor>Stefan Schulz</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <dc:contributor>Randall Dipert</dc:contributor>
         <dc:contributor>Larry Hunter</dc:contributor>
+        <dc:contributor>Stefan Schulz</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
-        <dc:contributor>Ron Rudnicki</dc:contributor>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: BFO does not claim to provide complete coverage of entities of all types. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning - coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation.</obo:IAO_0000116>
+        <dc:contributor>Ron Rudnicki</dc:contributor>
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
+        <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Ludger Jansen</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ro.owl">
-        <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
         <dc:description xml:lang="en">The OBO Relations Ontology (RO) is a collection of OWL relations (ObjectProperties) intended for use across a wide variety of biological ontologies.</dc:description>
+        <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"> https://github.com/oborel/obo-relations/</foaf:homepage>
     </rdf:Description>
