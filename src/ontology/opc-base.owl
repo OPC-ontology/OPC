@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>11-20-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.27</owl:versionInfo>
+        <oboInOwl:creation_date>12-04-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -753,6 +753,18 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:label xml:lang="en">fate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <obo:IAO_0000115>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:comment>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</rdfs:comment>
+        <rdfs:label xml:lang="en">antisolvent role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
