@@ -23,7 +23,7 @@
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
         <oboInOwl:creation_date>12-04-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.28</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.33</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -645,8 +645,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>a process by which a solid forms, where the atoms or molecules are highly organized into a structure known as a crystal.</obo:IAO_0000115>
+        <obo:IAO_0000115>a crystallization is a process that has as a material output a crystalline solid or a mixture that has as an ingerdient a crystalline solid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
+        <rdfs:comment>The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent. [CHMO]</rdfs:comment>
         <rdfs:label xml:lang="en">crystallization</rdfs:label>
     </owl:Class>
     
@@ -765,6 +767,84 @@
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:comment>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</rdfs:comment>
         <rdfs:label xml:lang="en">antisolvent role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <obo:IAO_0000115>The role of a crystalline solid material input in a crystallization to promote nuleation or crystal growth.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:comment>A seed crystal is a small piece of single crystal or polycrystal material from which a large crystal of typically the same material is to be grown in a laboratory. Used to replicate material, the use of seed crystal to promote growth avoids the otherwise slow randomness of natural crystal growth and allows manufacture on a scale suitable for industry [wikipedia].</rdfs:comment>
+        <rdfs:label xml:lang="en">seed role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <obo:IAO_0000115>the role of solids in a slurry</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">precipitate role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>is a suspension (AFM_0000442) that is a mix of solids in a liquid</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">slurry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
+        <obo:IAO_0000115>a physical quality indicating  the structural order of a solid in which its atoms or molecules are arranged in a regular, periodic manner.[wikipedia]</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">crystalline state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000005"/>
+        <obo:IAO_0000115>a result that quantifies the ratio of the amount of an impurity in the waste stream of a process to that retained in the product stream.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">purge factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>the ratio of the mass of desired compound recoved as crystalline material from a crystallization to mass of compound input</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">crystallization yield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <obo:IAO_0000115>a debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">mother liquor role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
