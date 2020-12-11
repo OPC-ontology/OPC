@@ -19,7 +19,7 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>12-04-2020</oboInOwl:creation_date>
+        <oboInOwl:creation_date>12-11-2020</oboInOwl:creation_date>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.34</owl:versionInfo>
     </owl:Ontology>
     
@@ -6207,6 +6207,12 @@ that has_part some material entity is a material entity. If we add as equivalent
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000029"/>
             </owl:Restriction>
@@ -6760,12 +6766,37 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>a crystallization is a process that has as a material output a crystalline solid or a mixture that has as an ingerdient a crystalline solid.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000065"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a crystallization is a process that has as a material output a crystalline solid or a mixture that has as an ingredient a crystalline solid.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>crystallization</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
         <rdfs:comment>The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent. [CHMO]</rdfs:comment>
-        <rdfs:label xml:lang="en">crystallization</rdfs:label>
+        <rdfs:comment>Wes and Oliver: This term is currently defined as a planned process term although crystallization may occur in nature. Here we use to term to repesent those synthetic chemical process processes that are man made and planned. In process chemistry, we are not dealing with natural crystallization process.</rdfs:comment>
+        <rdfs:label xml:lang="en">planned crystallization</rdfs:label>
     </owl:Class>
     
 
@@ -6887,6 +6918,15 @@ that has_part some material entity is a material entity. If we add as equivalent
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:label xml:lang="en">crystallization plan specifiication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000066">
@@ -6961,6 +7001,24 @@ that has_part some material entity is a material entity. If we add as equivalent
         <obo:IAO_0000115>a debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mother liquor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+        <rdfs:label xml:lang="en">crystallization function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:label xml:lang="en">crystalline solid</rdfs:label>
     </owl:Class>
     
 
@@ -7364,23 +7422,23 @@ This interpretation is *not* the same as an at-all-times relation
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>Pierre Grenon</dc:contributor>
         <dc:contributor>David Osumi-Sutherland</dc:contributor>
+        <dc:contributor>Pierre Grenon</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor>Melanie Courtot</dc:contributor>
         <dc:contributor>Bjoern Peters</dc:contributor>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
-        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
+        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
@@ -7388,10 +7446,10 @@ This interpretation is *not* the same as an at-all-times relation
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Randall Dipert</dc:contributor>
-        <dc:contributor>Stefan Schulz</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Larry Hunter</dc:contributor>
+        <dc:contributor>Stefan Schulz</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
@@ -7401,8 +7459,8 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
         <dc:contributor>Ludger Jansen</dc:contributor>
-        <dc:contributor>Bill Duncan</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Bill Duncan</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ro.owl">
