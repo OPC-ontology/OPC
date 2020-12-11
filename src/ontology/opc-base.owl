@@ -91,6 +91,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000029"/>
             </owl:Restriction>
@@ -644,12 +650,37 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>a crystallization is a process that has as a material output a crystalline solid or a mixture that has as an ingerdient a crystalline solid.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000065"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a crystallization is a process that has as a material output a crystalline solid or a mixture that has as an ingredient a crystalline solid.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>crystallization</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Crystallization</obo:IAO_0000119>
         <rdfs:comment>The formation of a crystalline solid from a solution, melt vapour, or a different solid phase, generally by lowering the temperature or by evaporation of a solvent. [CHMO]</rdfs:comment>
-        <rdfs:label xml:lang="en">crystallization</rdfs:label>
+        <rdfs:comment>Wes and Oliver: This term is currently defined as a planned process term although crystallization may occur in nature. Here we use to term to repesent those synthetic chemical process processes that are man made and planned. In process chemistry, we are not dealing with natural crystallization process.</rdfs:comment>
+        <rdfs:label xml:lang="en">planned crystallization</rdfs:label>
     </owl:Class>
     
 
@@ -771,6 +802,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:label xml:lang="en">crystallization plan specifiication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000066">
@@ -845,6 +885,24 @@
         <obo:IAO_0000115>a debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mother liquor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+        <rdfs:label xml:lang="en">crystallization function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
+        <rdfs:label xml:lang="en">crystalline solid</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
