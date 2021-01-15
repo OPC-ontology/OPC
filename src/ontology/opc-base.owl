@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>12-18-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
+        <oboInOwl:creation_date>1-15-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.38</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -70,6 +70,19 @@
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Solvation</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Solvent</obo:IAO_0000119>
         <rdfs:label xml:lang="en">is solvate of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000075 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OPC_0000075">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>an object property that represents a relation between polymorphes that are polymorphism of each other.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymorphism_(materials_science)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">is polymorph of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -685,21 +698,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPC_0000053 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
-        <obo:IAO_0000118>polymorphism</obo:IAO_0000118>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymorphism_(materials_science)</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">polymorph</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPC_0000054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
         <obo:IAO_0000115>a substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Polymer</obo:IAO_0000119>
         <rdfs:label xml:lang="en">polymer</rdfs:label>
