@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>12-11-2020</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.34</owl:versionInfo>
+        <oboInOwl:creation_date>12-18-2020</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
     </owl:Ontology>
     
 
