@@ -23,7 +23,7 @@
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
         <oboInOwl:creation_date>1-29-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.39</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.57</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -698,6 +698,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>The process mass intensity (PMI) calculates the ratio of the total mass of materials to the mass of the isolated product</obo:IAO_0000115>
+        <obo:IAO_0000118>PMI</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Process_chemistry</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">process mass intensity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000054">
@@ -905,6 +917,42 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000024"/>
         <rdfs:label xml:lang="en">crystalline solid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>E-factor measures the environmental impact of a synthetic reaction, and is computed by the ratio of the total mass of waste generated in the synthetic scheme to the mass of product isolated.</obo:IAO_0000115>
+        <obo:IAO_0000118>E-factor</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Process_chemistry</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">process environmental factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>The process excellence index (PEI) is a measure of process reproducibility where the robustness of the procedure is evaluated in terms of yield and cycle time of various operations.</obo:IAO_0000115>
+        <obo:IAO_0000118>PEI</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Process_chemistry</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">process excellence index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>The quality service level (QSL) is a measure of the reproducibility of the quality of the isolated intermediate or final API, and its calculation involves the ratio of satisfactory quality batches to the total number of batches. A reasonable QSL target is 98 to 100 percent.</obo:IAO_0000115>
+        <obo:IAO_0000118>QSL</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Process_chemistry</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quality service level</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
