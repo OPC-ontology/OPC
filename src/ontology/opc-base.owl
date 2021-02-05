@@ -22,8 +22,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>1-29-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.57</owl:versionInfo>
+        <oboInOwl:creation_date>2-5-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.58</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -954,6 +954,42 @@
         <obo:IAO_0000118>QSL</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Process_chemistry</obo:IAO_0000119>
         <rdfs:label xml:lang="en">quality service level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">chemical process development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
+        <rdfs:label xml:lang="en">route scouting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
+        <rdfs:label xml:lang="en">route development optimization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
+        <rdfs:label xml:lang="en">route validation</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
