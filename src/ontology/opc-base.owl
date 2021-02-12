@@ -200,19 +200,9 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route scouting</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPC_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
-        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">process optimization</rdfs:label>
     </owl:Class>
     
 
@@ -220,9 +210,10 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">process maintenance</rdfs:label>
+        <obo:IAO_0000118>process maintenance</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">route process maintenance</rdfs:label>
     </owl:Class>
     
 
@@ -463,7 +454,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -491,7 +482,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
         <rdfs:label xml:lang="en">temperature measurement</rdfs:label>
     </owl:Class>
     
@@ -500,7 +491,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <rdfs:label xml:lang="en">stirring</rdfs:label>
     </owl:Class>
     
@@ -509,8 +500,10 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">inserting material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000118>inserting material</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">charging material</rdfs:label>
     </owl:Class>
     
 
@@ -536,7 +529,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">GLP synthetic process</rdfs:label>
     </owl:Class>
@@ -644,7 +637,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <rdfs:label xml:lang="en">filtering</rdfs:label>
     </owl:Class>
     
@@ -676,7 +669,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -726,37 +719,12 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>a process that controls the impurities (organic, inorganic, elemental, or residual solvents) of pharmaceutical substances produced by chemical syntheses to ensure the desired product quality.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000115>a process that determines the fate of impurities (organic, inorganic, elemental, or residual solvents) of pharmaceutical substances produced by chemical syntheses to ensure the desired product quality, and the ability of the synthetic route to  purge them.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>fate and purge</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">fate and purge of impurity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPC_0000056 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">purge of impurity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPC_0000057 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
-        <rdfs:label xml:lang="en">purge of impurity by crystallization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPC_0000058 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000058">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
-        <rdfs:label xml:lang="en">purge of impurity by extraction</rdfs:label>
+        <obo:IAO_0000118>fate and purge of impurity</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">impurity fate and purge determination</rdfs:label>
     </owl:Class>
     
 
@@ -964,16 +932,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>A planned process with data output of commercial synthetic chemical route.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">chemical process development</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPC_0000080 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000080">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
-        <rdfs:label xml:lang="en">route scouting</rdfs:label>
     </owl:Class>
     
 
@@ -981,7 +942,8 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
+        <obo:IAO_0000118>development optimization</obo:IAO_0000118>
         <rdfs:label xml:lang="en">route development optimization</rdfs:label>
     </owl:Class>
     
@@ -990,7 +952,8 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000086"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <rdfs:label xml:lang="en">route validation</rdfs:label>
     </owl:Class>
     
@@ -1008,7 +971,14 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000084 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000232>NOTE: let&apos;s put this term under BFO:&apos;process boundary&apos;.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">route selection</rdfs:label>
     </owl:Class>
     
@@ -1017,7 +987,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
         <rdfs:label xml:lang="en">mechanistic and kinetic determination</rdfs:label>
     </owl:Class>
     
@@ -1044,7 +1014,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
         <rdfs:label xml:lang="en">adjustment of process parameter with design space</rdfs:label>
     </owl:Class>
     
@@ -1062,7 +1032,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
         <rdfs:label xml:lang="en">new supplier evaluation</rdfs:label>
     </owl:Class>
     
@@ -1071,7 +1041,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
         <rdfs:label xml:lang="en">screening in process chemistry</rdfs:label>
     </owl:Class>
     
@@ -1092,6 +1062,87 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
         <rdfs:label xml:lang="en">workflow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <rdfs:label xml:lang="en">review of prior work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">product filing documentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <rdfs:label xml:lang="en">review of literature prior work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <rdfs:label xml:lang="en">review of proprietary internal work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <rdfs:label xml:lang="en">review of patent work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">route related process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">process monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <rdfs:label xml:lang="en">pressure measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <rdfs:label xml:lang="en">end reaction monitoring</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
