@@ -991,6 +991,24 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000079"/>
         <rdfs:label xml:lang="en">route validation</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">reaction screening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">route selection</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
