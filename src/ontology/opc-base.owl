@@ -24,8 +24,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>2-12-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.62</owl:versionInfo>
+        <oboInOwl:creation_date>2-19-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.63</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -103,7 +103,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -203,6 +203,17 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route scouting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <obo:IAO_0000115>A process boundary that represents a milestoe of a made decison on route selection at a specific time point.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">route selection milestone</rdfs:label>
     </owl:Class>
     
 
@@ -646,11 +657,12 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A basic and unit step in a process</obo:IAO_0000115>
+        <obo:IAO_0000118>unit operation</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unit_operation</obo:IAO_0000119>
         <rdfs:comment>In chemical engineering and related fields, a unit operation is a basic step in a process. Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
-        <rdfs:label xml:lang="en">unit operation</rdfs:label>
+        <rdfs:label xml:lang="en">unit operation in chemical processing</rdfs:label>
     </owl:Class>
     
 
@@ -725,6 +737,39 @@
         <obo:IAO_0000118>fate and purge</obo:IAO_0000118>
         <obo:IAO_0000118>fate and purge of impurity</obo:IAO_0000118>
         <rdfs:label xml:lang="en">impurity fate and purge determination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>a sequenced plan of synthetic steps and defined intermediates to make a specific product from commericially available starting materials</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">route specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000117>a sequenced set of unit operations for a single synthetic reaction or simultaneous reactions that are executed in a single equipment train.</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">synthetic step specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regularatory approval to sell a new pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product filing milestone</rdfs:label>
     </owl:Class>
     
 
@@ -939,11 +984,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000058"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regularatory approval to sell a new drug pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">drug product filing milestone</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>development optimization</obo:IAO_0000118>
+        <obo:IAO_0000118>process optimization</obo:IAO_0000118>
         <rdfs:label xml:lang="en">route development optimization</rdfs:label>
     </owl:Class>
     
@@ -974,11 +1032,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000009"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000232>NOTE: let&apos;s put this term under BFO:&apos;process boundary&apos;.</obo:IAO_0000232>
+        <obo:IAO_0000115>A process that ends with a milestone where a selection will be made on route process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route selection</rdfs:label>
     </owl:Class>
     
@@ -1061,7 +1120,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">workflow</rdfs:label>
+        <rdfs:label xml:lang="en">process chemistry workflow</rdfs:label>
     </owl:Class>
     
 
@@ -1115,6 +1174,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route related process</rdfs:label>
     </owl:Class>
     
@@ -1143,6 +1203,28 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
         <rdfs:label xml:lang="en">end reaction monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regularatory approval to sell a new pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product approval milestone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000103"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regularatory approval to sell a new drug pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">drug product approval milestone</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
