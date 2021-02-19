@@ -21,8 +21,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>2-12-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.62</owl:versionInfo>
+        <oboInOwl:creation_date>2-19-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.63</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5287,6 +5287,24 @@ a relation between a process and a continuant, in which the process is inhibited
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:BFO_0000179>p-boundary</obo:BFO_0000179>
+        <obo:BFO_0000180>ProcessBoundary</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the boundary between the 2nd and 3rd year of your life.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">p is a process boundary =Def. p is a temporal part of a process &amp; p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000601 xml:lang="en">Every process boundary occupies_temporal_region a zero-dimensional temporal region. (axiom label in BFO2 Reference: [085-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">process boundary</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
@@ -6219,7 +6237,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -6319,6 +6337,17 @@ that has_part some material entity is a material entity. If we add as equivalent
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route scouting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <obo:IAO_0000115>A process boundary that represents a milestoe of a made decison on route selection at a specific time point.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">route selection milestone</rdfs:label>
     </owl:Class>
     
 
@@ -6762,11 +6791,12 @@ that has_part some material entity is a material entity. If we add as equivalent
     <!-- http://purl.obolibrary.org/obo/OPC_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A basic and unit step in a process</obo:IAO_0000115>
+        <obo:IAO_0000118>unit operation</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Unit_operation</obo:IAO_0000119>
         <rdfs:comment>In chemical engineering and related fields, a unit operation is a basic step in a process. Unit operations involve a physical change or chemical transformation such as separation, crystallization, evaporation, filtration, polymerization, isomerization, and other reactions. For example, in milk processing, homogenization, pasteurization, and packaging are each unit operations which are connected to create the overall process. A process may require many unit operations to obtain the desired product from the starting materials, or feedstocks.</rdfs:comment>
-        <rdfs:label xml:lang="en">unit operation</rdfs:label>
+        <rdfs:label xml:lang="en">unit operation in chemical processing</rdfs:label>
     </owl:Class>
     
 
@@ -6841,6 +6871,39 @@ that has_part some material entity is a material entity. If we add as equivalent
         <obo:IAO_0000118>fate and purge</obo:IAO_0000118>
         <obo:IAO_0000118>fate and purge of impurity</obo:IAO_0000118>
         <rdfs:label xml:lang="en">impurity fate and purge determination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>a sequenced plan of synthetic steps and defined intermediates to make a specific product from commericially available starting materials</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">route specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <obo:IAO_0000117>a sequenced set of unit operations for a single synthetic reaction or simultaneous reactions that are executed in a single equipment train.</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">synthetic step specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regularatory approval to sell a new pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product filing milestone</rdfs:label>
     </owl:Class>
     
 
@@ -7055,11 +7118,24 @@ that has_part some material entity is a material entity. If we add as equivalent
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000058"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of filing the documentation required to obtain regularatory approval to sell a new drug pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">drug product filing milestone</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>development optimization</obo:IAO_0000118>
+        <obo:IAO_0000118>process optimization</obo:IAO_0000118>
         <rdfs:label xml:lang="en">route development optimization</rdfs:label>
     </owl:Class>
     
@@ -7090,11 +7166,12 @@ that has_part some material entity is a material entity. If we add as equivalent
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000009"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000232>NOTE: let&apos;s put this term under BFO:&apos;process boundary&apos;.</obo:IAO_0000232>
+        <obo:IAO_0000115>A process that ends with a milestone where a selection will be made on route process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route selection</rdfs:label>
     </owl:Class>
     
@@ -7177,7 +7254,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">workflow</rdfs:label>
+        <rdfs:label xml:lang="en">process chemistry workflow</rdfs:label>
     </owl:Class>
     
 
@@ -7231,6 +7308,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route related process</rdfs:label>
     </owl:Class>
     
@@ -7259,6 +7337,28 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
         <rdfs:label xml:lang="en">end reaction monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regularatory approval to sell a new pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">product approval milestone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000103"/>
+        <obo:IAO_0000115>A process boundary that represents a milestone of obtaining regularatory approval to sell a new drug pruduct.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">drug product approval milestone</rdfs:label>
     </owl:Class>
     
 
@@ -7662,8 +7762,8 @@ This interpretation is *not* the same as an at-all-times relation
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>Pierre Grenon</dc:contributor>
         <dc:contributor>David Osumi-Sutherland</dc:contributor>
+        <dc:contributor>Pierre Grenon</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
         <dc:contributor>Werner Ceusters</dc:contributor>
         <dc:contributor>Selja Seppälä</dc:contributor>
@@ -7673,9 +7773,9 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
-        <dc:contributor>Melanie Courtot</dc:contributor>
-        <dc:contributor>Bjoern Peters</dc:contributor>
         <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
+        <dc:contributor>Bjoern Peters</dc:contributor>
+        <dc:contributor>Melanie Courtot</dc:contributor>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
@@ -7683,10 +7783,10 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Randall Dipert</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
         <dc:contributor>Larry Hunter</dc:contributor>
