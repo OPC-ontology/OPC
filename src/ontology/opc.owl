@@ -21,8 +21,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>2-19-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.63</owl:versionInfo>
+        <oboInOwl:creation_date>2-25-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.67</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6288,6 +6288,7 @@ that has_part some material entity is a material entity. If we add as equivalent
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>DoE</obo:IAO_0000118>
         <rdfs:label xml:lang="en">Design of Experiment</rdfs:label>
     </owl:Class>
@@ -6317,6 +6318,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000003"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">DoE based on factorial design</rdfs:label>
     </owl:Class>
     
@@ -6528,6 +6530,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000048"/>
         <obo:IAO_0000115>critical process profile in synthesis process that is about temperature</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -6628,6 +6631,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">temperature measurement</rdfs:label>
     </owl:Class>
     
@@ -6637,6 +6641,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">stirring</rdfs:label>
     </owl:Class>
     
@@ -6716,6 +6721,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:comment>critical process profile in synthesis process that is about material flow</rdfs:comment>
         <rdfs:label xml:lang="en">material flow profile in synthesis process</rdfs:label>
     </owl:Class>
@@ -6727,6 +6733,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <obo:IAO_0000115>A process profile that is associated with a synthesis process</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -6743,6 +6750,7 @@ that has_part some material entity is a material entity. If we add as equivalent
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An application as requested to do something.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process chemistry filing</rdfs:label>
     </owl:Class>
     
@@ -6762,6 +6770,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000047"/>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">quality process profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -6783,6 +6792,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">filtering</rdfs:label>
     </owl:Class>
     
@@ -7146,6 +7156,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000086"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route validation</rdfs:label>
     </owl:Class>
     
@@ -7155,6 +7166,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">reaction screening</rdfs:label>
     </owl:Class>
     
@@ -7181,6 +7193,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mechanistic and kinetic determination</rdfs:label>
     </owl:Class>
     
@@ -7190,6 +7203,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process validation</rdfs:label>
     </owl:Class>
     
@@ -7199,6 +7213,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">statistical lot analysis</rdfs:label>
     </owl:Class>
     
@@ -7208,6 +7223,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">adjustment of process parameter with design space</rdfs:label>
     </owl:Class>
     
@@ -7217,6 +7233,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">polymorph and solvate screening</rdfs:label>
     </owl:Class>
     
@@ -7226,6 +7243,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">new supplier evaluation</rdfs:label>
     </owl:Class>
     
@@ -7235,6 +7253,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">screening in process chemistry</rdfs:label>
     </owl:Class>
     
@@ -7244,6 +7263,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000092">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">batch campaign</rdfs:label>
     </owl:Class>
     
@@ -7254,6 +7274,7 @@ that has_part some material entity is a material entity. If we add as equivalent
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process chemistry workflow</rdfs:label>
     </owl:Class>
     
@@ -7263,6 +7284,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of prior work</rdfs:label>
     </owl:Class>
     
@@ -7281,6 +7303,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of literature prior work</rdfs:label>
     </owl:Class>
     
@@ -7290,6 +7313,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of proprietary internal work</rdfs:label>
     </owl:Class>
     
@@ -7299,6 +7323,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of patent work</rdfs:label>
     </owl:Class>
     
@@ -7318,6 +7343,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process monitoring</rdfs:label>
     </owl:Class>
     
@@ -7327,6 +7353,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">pressure measurement</rdfs:label>
     </owl:Class>
     
@@ -7336,6 +7363,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">end reaction monitoring</rdfs:label>
     </owl:Class>
     
@@ -7762,8 +7790,8 @@ This interpretation is *not* the same as an at-all-times relation
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
         <dc:contributor>Werner Ceusters</dc:contributor>
         <dc:contributor>Selja Seppälä</dc:contributor>
@@ -7773,10 +7801,10 @@ This interpretation is *not* the same as an at-all-times relation
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
-        <dc:contributor>Bjoern Peters</dc:contributor>
         <dc:contributor>Melanie Courtot</dc:contributor>
+        <dc:contributor>Bjoern Peters</dc:contributor>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
@@ -7785,11 +7813,11 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>Holger Stenzhorn</dc:contributor>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <dc:contributor>Randall Dipert</dc:contributor>
-        <dc:contributor>Stefan Schulz</dc:contributor>
         <dc:contributor>Larry Hunter</dc:contributor>
+        <dc:contributor>Stefan Schulz</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
@@ -7798,14 +7826,14 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
-        <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:contributor>Ludger Jansen</dc:contributor>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Bill Duncan</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ro.owl">
-        <dc:description xml:lang="en">The OBO Relations Ontology (RO) is a collection of OWL relations (ObjectProperties) intended for use across a wide variety of biological ontologies.</dc:description>
         <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
+        <dc:description xml:lang="en">The OBO Relations Ontology (RO) is a collection of OWL relations (ObjectProperties) intended for use across a wide variety of biological ontologies.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"> https://github.com/oborel/obo-relations/</foaf:homepage>
     </rdf:Description>

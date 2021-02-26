@@ -24,8 +24,8 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
         <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
-        <oboInOwl:creation_date>2-19-2021</oboInOwl:creation_date>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.63</owl:versionInfo>
+        <oboInOwl:creation_date>2-25-2021</oboInOwl:creation_date>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.67</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -154,6 +154,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000118>DoE</obo:IAO_0000118>
         <rdfs:label xml:lang="en">Design of Experiment</rdfs:label>
     </owl:Class>
@@ -183,6 +184,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000003"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">DoE based on factorial design</rdfs:label>
     </owl:Class>
     
@@ -394,6 +396,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000048"/>
         <obo:IAO_0000115>critical process profile in synthesis process that is about temperature</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">temperature profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -494,6 +497,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">temperature measurement</rdfs:label>
     </owl:Class>
     
@@ -503,6 +507,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">stirring</rdfs:label>
     </owl:Class>
     
@@ -582,6 +587,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:comment>critical process profile in synthesis process that is about material flow</rdfs:comment>
         <rdfs:label xml:lang="en">material flow profile in synthesis process</rdfs:label>
     </owl:Class>
@@ -593,6 +599,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <obo:IAO_0000115>A process profile that is associated with a synthesis process</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -609,6 +616,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An application as requested to do something.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process chemistry filing</rdfs:label>
     </owl:Class>
     
@@ -628,6 +636,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000045"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000047"/>
+        <obo:IAO_0000117>Oliver, Wes</obo:IAO_0000117>
         <rdfs:label xml:lang="en">quality process profile in synthesis process</rdfs:label>
     </owl:Class>
     
@@ -649,6 +658,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">filtering</rdfs:label>
     </owl:Class>
     
@@ -1012,6 +1022,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000086"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000099"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">route validation</rdfs:label>
     </owl:Class>
     
@@ -1021,6 +1032,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">reaction screening</rdfs:label>
     </owl:Class>
     
@@ -1047,6 +1059,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mechanistic and kinetic determination</rdfs:label>
     </owl:Class>
     
@@ -1056,6 +1069,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process validation</rdfs:label>
     </owl:Class>
     
@@ -1065,6 +1079,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">statistical lot analysis</rdfs:label>
     </owl:Class>
     
@@ -1074,6 +1089,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">adjustment of process parameter with design space</rdfs:label>
     </owl:Class>
     
@@ -1083,6 +1099,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">polymorph and solvate screening</rdfs:label>
     </owl:Class>
     
@@ -1092,6 +1109,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">new supplier evaluation</rdfs:label>
     </owl:Class>
     
@@ -1101,6 +1119,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">screening in process chemistry</rdfs:label>
     </owl:Class>
     
@@ -1110,6 +1129,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000092">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">batch campaign</rdfs:label>
     </owl:Class>
     
@@ -1120,6 +1140,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000093">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process chemistry workflow</rdfs:label>
     </owl:Class>
     
@@ -1129,6 +1150,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of prior work</rdfs:label>
     </owl:Class>
     
@@ -1147,6 +1169,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of literature prior work</rdfs:label>
     </owl:Class>
     
@@ -1156,6 +1179,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of proprietary internal work</rdfs:label>
     </owl:Class>
     
@@ -1165,6 +1189,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000094"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">review of patent work</rdfs:label>
     </owl:Class>
     
@@ -1184,6 +1209,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">process monitoring</rdfs:label>
     </owl:Class>
     
@@ -1193,6 +1219,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">pressure measurement</rdfs:label>
     </owl:Class>
     
@@ -1202,6 +1229,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000100"/>
+        <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">end reaction monitoring</rdfs:label>
     </owl:Class>
     
