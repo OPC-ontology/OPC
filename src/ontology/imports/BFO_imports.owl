@@ -207,7 +207,7 @@
         <obo:BFO_0000180>SpatialRegion</obo:BFO_0000180>
         <obo:IAO_0000602>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </obo:IAO_0000602>
         <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Spatial region doesn&#39;t have a closure axiom because the subclasses don&#39;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&#39;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -227,7 +227,7 @@
         <obo:IAO_0000602>(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] </obo:IAO_0000602>
         <obo:IAO_0000600 xml:lang="en">A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])</obo:IAO_0000601>
         <obo:IAO_0000116 xml:lang="en">Temporal region doesn&#39;t have a closure axiom because the subclasses don&#39;t exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn&#39;t overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -266,7 +266,7 @@
         <obo:IAO_0000602>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </obo:IAO_0000602>
         <obo:IAO_0000600 xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Every spatiotemporal region occupies_spatiotemporal_region itself.</obo:IAO_0000601>
@@ -784,6 +784,32 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
     </owl:Class>
     
+<!--  http://purl.obolibrary.org/obo/BFO_0000027  -->
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+		<rdfs:label xml:lang="en">object aggregate</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+		<obo:BFO_0000180>ObjectAggregate</obo:BFO_0000180>
+		<obo:IAO_0000116>An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects </obo:IAO_0000116>
+		<obo:IAO_0000116 xml:lang="en">BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee).</obo:IAO_0000116>
+		<obo:IAO_0000119>ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.</obo:IAO_0000119>
+		<obo:IAO_0000602>(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] </obo:IAO_0000602>
+		<obo:IAO_0000112 xml:lang="en">a collection of cells in a blood biobank.</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">a swarm of bees is an aggregate of members who are linked together through natural bonds</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">a symphony orchestra</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">defined by fiat: the aggregate of members of an organization</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">defined through physical attachment: the aggregate of atoms in a lump of granite</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container</obo:IAO_0000112>
+		<obo:BFO_0000179>object-aggregate</obo:BFO_0000179>
+		<obo:IAO_0000112 xml:lang="en">an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)</obo:IAO_0000112>
+		<obo:IAO_0000600 xml:lang="en">b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])</obo:IAO_0000600>
+		<obo:IAO_0000112 xml:lang="en">defined via attributive delimitations such as: the patients in this hospital</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">the aggregate of bearings in a constant velocity axle joint</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">the aggregate of blood cells in your body</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">the nitrogen atoms in the atmosphere</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">the restaurants in Palo Alto</obo:IAO_0000112>
+		<obo:IAO_0000112 xml:lang="en">your collection of Meissen ceramic plates.</obo:IAO_0000112>
+		<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+	</owl:Class>
 
 
     <!-- 
@@ -847,4 +873,3 @@
 
 
 <!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
-

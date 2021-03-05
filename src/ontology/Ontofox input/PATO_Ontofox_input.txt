@@ -6,6 +6,7 @@ PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000965
+http://purl.obolibrary.org/obo/PATO_0000122
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000051 #morphology
