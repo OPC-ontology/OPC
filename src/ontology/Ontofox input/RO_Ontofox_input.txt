@@ -15,6 +15,13 @@ includeAllChildren
 http://purl.obolibrary.org/obo/RO_0002410 # causally related to
 includeAllChildren
 
+http://purl.obolibrary.org/obo/RO_0002609 # quality influences
+includeAllChildren
+
+http://purl.obolibrary.org/obo/RO_0000002502 # quality influenced by
+includeAllChildren
+
+
 http://purl.obolibrary.org/obo/RO_0000057 #has participant
 includeAllChildren
 

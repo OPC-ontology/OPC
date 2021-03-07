@@ -1,0 +1,284 @@
+@prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
+@prefix af-q: <http://purl.allotrope.org/ontologies/quality#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix af-m: <http://purl.allotrope.org/ontologies/material#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO> .
+@prefix chmo: <http://purl.obolibrary.org/obo/CHMO> .
+@prefix pato: <http://purl.obolibrary.org/obo/PATO> .
+
+
+
+###  http://purl.allotrope.org/ontologies/equipment#AFE_0000354
+
+af-e:AFE_0000354 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-e:AFE_0002099 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 af-x:AFX_0002865 <http://purl.allotrope.org/voc/afo/REC/2018/07/aft> ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ,
+                                  <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/system> ;
+                 
+                 skos:altLabel "engineered artifact" ;
+                 
+                 skos:definition "A device is an artifact that is designed to perform a function primarily by means of its mechanical or electrical nature. [Allotrope]" ;
+                 
+                 skos:note "A device has a designed form or physical structure.  This distinguishes a device from a chemical and a biological artifact, that are typical bulk or portions of materials without a designed form. [Allotrope]" ;
+                 
+                 skos:prefLabel "device" .
+
+
+###  http://purl.allotrope.org/ontologies/equipment#AFE_0002099
+
+				 af-e:AFE_0002099 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-m:AFM_0000275 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 af-x:AFX_0002865 <http://purl.allotrope.org/voc/afo/REC/2018/07/aft> ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ,
+                                  <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/system> ;
+                 
+                 skos:definition "An artifact is a material that is designed and built for a purpose. [Allotrope]" ;
+                 
+                 skos:prefLabel "artifact" .
+				 
+###  http://purl.allotrope.org/ontologies/material#AFM_0001097
+
+af-m:AFM_0001097 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf chmo:_0000993 ;
+                 
+                 dct:license <http://purl.allotrope.org/voc/iupac-license> ;
+                 
+                 dct:rights <http://purl.allotrope.org/voc/iupac-copyright> ;
+                 
+                 dct:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997)." ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/afo> ;
+                 
+                 skos:definition "A chemical substance is a portion of material that is matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of. [IUPAC]" ;
+                 
+                 skos:prefLabel "chemical substance" .
+				 
+###  http://purl.allotrope.org/ontologies/material#AFM_0001034
+
+af-m:AFM_0001034 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-m:AFM_0001038 ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/portion-of-material> ;
+                 
+                 skos:definition "A heterogeneous mixture is a portion of mixed material that is not uniform in composition, but proportions of its components vary throughout the sample. [Wikipedia]" ;
+                 
+                 skos:example "sea water with sand" ;
+                 
+                 skos:prefLabel "heterogeneous mixture" .
+				 
+
+###  http://purl.allotrope.org/ontologies/material#AFM_0001038
+
+af-m:AFM_0001038 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf chmo:_0000993 ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/portion-of-material> ;
+                 
+                 skos:altLabel "blend" ,
+                               "mixture" ,
+                               "portion of mixture" ;
+                 
+                 skos:definition "An portion of mixed material is a material entity that consists of different kinds of grains if you inspect it at a higher level of granularity. [Allotrope]" ;
+                 
+                 skos:example "portion of milk" ,
+                              "sand" ,
+                              "sea water" ,
+                              "sea water with sand" ;
+                 
+                 skos:prefLabel "portion of mixed material" .	
+
+###  http://purl.allotrope.org/ontologies/material#AFM_0001035
+
+af-m:AFM_0001035 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-m:AFM_0001038 ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/portion-of-material> ;
+                 
+                 skos:definition "A homogeneous mixture is a portion of mixed material that has the same proportions of its components throughout a given sample. Homogeneous mixture can have a variable composition. [Wikipedia]" ;
+                 
+                 skos:example "air" ,
+                              "sea water" ;
+                 
+                 skos:prefLabel "homogeneous mixture" .		 
+				 
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000111
+
+af-q:AFQ_0000111 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf pato:_0000051 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:altLabel "material state" ;
+                 
+                 skos:definition "A state of matter is a quality of material that is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma. Many other states are known to exist only in extreme situations, such as Bose-Einstein condensates, neutron-degenerate matter, and quark-gluon plasma, which only occur in situations of extreme cold, extreme density, and extremely high-energy color-charged matter respectively. [Wikipedia]" ;
+                 
+                 skos:prefLabel "state of matter" .
+
+
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000112
+
+af-q:AFQ_0000112 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-q:AFQ_0000111 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:altLabel "solid state of matter" ;
+                 
+                 skos:definition "A state of matter, in which particles are closely packed together. The forces between particles are strong so that the particles cannot move freely but can only vibrate. As a result, a solid has a stable, definite shape, and a definite volume. Solids can only change their shape by force, as when broken or cut. [Wikipedia]" ;
+                 
+                 skos:prefLabel "solid" .
+
+
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000113
+
+af-q:AFQ_0000113 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-q:AFQ_0000111 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:altLabel "liquid state of matter" ;
+                 
+                 skos:definition "A state of matter that is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure. [Wikipedia]" ;
+                 
+                 skos:prefLabel "liquid" .
+
+
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000114
+
+af-q:AFQ_0000114 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-q:AFQ_0000111 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:altLabel "gaseous" ,
+                               "gaseous state of matter" ;
+                 
+                 skos:definition "A state of matter that is a compressible fluid. Not only will a gas conform to the shape of its container but it will also expand to fill the container. In a gas, the molecules have enough kinetic energy so that the effect of intermolecular forces is small (or zero for an ideal gas), and the typical distance between neighboring molecules is much greater than the molecular size. A gas has no definite shape or volume, but occupies the entire container in which it is confined. [Wikipedia]" ;
+                 
+                 skos:prefLabel "gas" .
+
+
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000115
+
+af-q:AFQ_0000115 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-q:AFQ_0000111 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:altLabel "plasma state of matter" ;
+                 
+                 skos:definition "A physical quality that inheres in a bearer by virtue of its plasma is a state of matter, that is, it does not have definite shape or volume. Unlike gases, plasmas are electrically conductive, produce magnetic fields and electric currents, and respond strongly to electromagnetic forces. Positively charged nuclei swim in a \"sea\" of freely-moving disassociated electrons, similar to the way such charges exist in conductive metal. [Wikipedia]" ;
+                 
+                 skos:prefLabel "plasma" .
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000250
+
+af-q:AFQ_0000250 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf bfo:_0000019 ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ro:_0000052 ;
+                                   owl:someValuesFrom af-m:AFM_0001097
+                                 ] ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:definition "A chemical substance quality is a quality that inheres in some portion of chemical substance. [Allotrope]" ;
+                 
+                 skos:prefLabel "chemical substance quality" .
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000279
+
+af-q:AFQ_0000279 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-q:AFQ_0000250 ;
+                 
+                 dct:source <https://en.wikipedia.org/wiki/Hygroscopy> ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:definition "Hygroscopicity is a quality inhered in a compound by virtue of its ability to readily take up and retain water, especially from the atmosphere. [Wikipedia]" ;
+                 
+                 skos:prefLabel "hygroscopicity" .				 
+				 
+###  http://purl.allotrope.org/ontologies/property#AFX_0002722
+
+af-x:AFX_0002722 rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:subPropertyOf ro:_0002502 ;
+                 
+                 owl:inverseOf af-x:AFX_0002723 ;
+                 
+                 rdf:type owl:TransitiveProperty ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/relation> ;
+                 
+                 skos:altLabel "influenced by" ;
+                 
+                 skos:definition "Inverse of quality influences. [Allotrope]" ;
+                 
+                 skos:prefLabel "quality influenced by" .
+
+
+
+###  http://purl.allotrope.org/ontologies/property#AFX_0002723
+
+af-x:AFX_0002723 rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:subPropertyOf ro:_0002609 ;
+                 
+                 rdf:type owl:TransitiveProperty ;
+                 
+                 rdfs:domain bfo:_0000019 ;
+                 
+                 rdfs:range bfo:_0000019 ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/relation> ;
+                 
+                 skos:altLabel "influences" ;
+                 
+                 skos:definition "Holds between qualities a and b  such that if a process changes the quality to some other instance a' then for some a' it is necessary that b changes to another instance b'. [Allotrope]" ;
+                 
+                 skos:example "volume influences density" ;
+                 
+                 skos:prefLabel "quality influences" .
+				 
