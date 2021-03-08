@@ -6,6 +6,25 @@ CHMO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CHMO_0000993 #portion of material
+http://purl.obolibrary.org/obo/CHMO_0001532 #distillation
+
+http://purl.obolibrary.org/obo/OBI_0001034 #environmental control device
+
+http://purl.obolibrary.org/obo/CHMO_0010020 #fume hood
+
+http://purl.obolibrary.org/obo/OBI_0000967 #container
+
+http://purl.obolibrary.org/obo/CHMO_0002572 #schlenk flask
+
+http://purl.obolibrary.org/obo/CHMO_0001574 #evaporation
+
+http://purl.obolibrary.org/obo/CHMO_0002787 #syringe pump
+
+http://purl.obolibrary.org/obo/CHMO_0002199 # rotary evaporator
+
+http://purl.obolibrary.org/obo/CHMO_0001910 # structure data
+
+http://purl.obolibrary.org/obo/CHMO_0000793 # assay data
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 #material entity

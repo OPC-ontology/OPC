@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opc/PATO_imports.owl." uri="imports/PATO_imports.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opc/IAO.owl" uri="imports/IAO_imports.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opc/CHMO.owl" uri="imports/CHMO_imports.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opc/BFO_imports.owl" uri="imports/BFO_imports.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/opc/RO_imports.owl" uri="imports/RO_imports.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+<<<<<<< Updated upstream
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="duplicate:http://purl.obolibrary.org/obo/opc.owl" uri="opc-base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="duplicate:http://purl.obolibrary.org/obo/opc.owl" uri="opc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="duplicate:http://purl.obolibrary.org/obo/opc.owl" uri="Untitled.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="http://purl.obolibrary.org/obo/opc/BFO_imports.owl" uri="imports/BFO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="duplicate:http://purl.obolibrary.org/obo/opc/CHMO.owl" uri="imports/AFO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="duplicate:http://purl.obolibrary.org/obo/opc/CHMO.owl" uri="imports/CHMO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="http://purl.obolibrary.org/obo/opc/RO_imports.owl" uri="imports/RO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614364726373" name="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
+=======
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="duplicate:http://purl.obolibrary.org/obo/opc.owl" uri="opc-base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="duplicate:http://purl.obolibrary.org/obo/opc.owl" uri="opc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="http://purl.obolibrary.org/obo/opc/BFO_imports.owl" uri="imports/BFO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="http://purl.obolibrary.org/obo/opc/CHMO.owl" uri="imports/CHMO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="duplicate:http://purl.obolibrary.org/obo/opc/IAO_imports.owl." uri="imports/IAO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="duplicate:http://purl.obolibrary.org/obo/opc/PATO_imports.owl." uri="imports/PATO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="http://purl.obolibrary.org/obo/opc/RO_imports.owl" uri="imports/RO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1615025868383" name="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
+>>>>>>> Stashed changes
+    </group>
+</catalog>

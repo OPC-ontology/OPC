@@ -604,7 +604,62 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
-
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+<rdfs:label xml:lang="en">textual entity</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+<obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+<obo:IAO_0000116 xml:lang="en">AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc.</obo:IAO_0000116>
+<obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
+<obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+<obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+<obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
+<obo:IAO_0000111 xml:lang="en">textual entity</obo:IAO_0000111>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+</owl:Class>
+<!--  http://purl.obolibrary.org/obo/IAO_0000310  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+<rdfs:label xml:lang="en">document</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+<obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+<obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+<obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+<obo:IAO_0000111 xml:lang="en">document</obo:IAO_0000111>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+</owl:Class>
+<!--  http://purl.obolibrary.org/obo/IAO_0000314  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000314">
+<rdfs:label xml:lang="en">document part</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+<obo:IAO_0000112 xml:lang="en">An abstract, introduction, method or results section.</obo:IAO_0000112>
+<obo:IAO_0000115 xml:lang="en">An information content entity that is part of a document.</obo:IAO_0000115>
+<obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+<obo:IAO_0000111 xml:lang="en">document part</obo:IAO_0000111>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+</owl:Class>
+<!--  http://purl.obolibrary.org/obo/IAO_0000590  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000590">
+<rdfs:label xml:lang="en">written name</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+<obo:IAO_0000112 xml:lang="en">"Bill Clinton"</obo:IAO_0000112>
+<obo:IAO_0000112 xml:lang="en">"The Eiffel Tower"</obo:IAO_0000112>
+<obo:IAO_0000112 xml:lang="en">"United States of America"</obo:IAO_0000112>
+<obo:IAO_0000115 xml:lang="en">A textual entity that denotes a particular in reality.</obo:IAO_0000115>
+<obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+<obo:IAO_0000232 xml:lang="en">The qualifier "written" is to set it apart from spoken names. Also, note the restrictions to particulars. We are not naming universals. We could however, be naming, attributive collections which are particulars, so "All people located in the boundaries of the city of Little Rock, AR on June 18, 2011 at 9:50a CDT" would be a name.</obo:IAO_0000232>
+<obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/114</obo:IAO_0000119>
+<obo:IAO_0000111 xml:lang="en">written name</obo:IAO_0000111>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+</owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
@@ -1377,7 +1432,54 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macromolecule</rdfs:label>
     </owl:Class>
     
+<!--  http://purl.obolibrary.org/obo/CHEBI_35195  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35195">
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surfactant</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_63046"/>
+<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance which lowers the surface tension of the medium in which it is dissolved, and/or the interfacial tension with other phases, and, accordingly, is positively adsorbed at the liquid/vapour and/or at other interfaces.</obo:IAO_0000115>
+<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:35195</oboInOwl:id>
+<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface active agent</oboInOwl:hasRelatedSynonym>
+<oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surfactant</oboInOwl:hasExactSynonym>
+<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surfactants</oboInOwl:hasRelatedSynonym>
+<oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+</owl:Class>
 
+<!--  http://purl.obolibrary.org/obo/CHEBI_50906  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</rdfs:label>
+<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
+<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50906</oboInOwl:id>
+<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+<oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+</owl:Class>
+
+<!--  http://purl.obolibrary.org/obo/CHEBI_51086  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51086">
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical role</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role played by the molecular entity or part thereof within a chemical context.</obo:IAO_0000115>
+<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:51086</oboInOwl:id>
+<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+<oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+</owl:Class>
+
+<!--  http://purl.obolibrary.org/obo/CHEBI_63046  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_63046">
+<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emulsifier</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
+<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:63046</oboInOwl:id>
+<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chemical role played by a substance that stabilizes an emulsion by increasing its kinetic stability.</obo:IAO_0000115>
+<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emulgent</oboInOwl:hasRelatedSynonym>
+<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emulgents</oboInOwl:hasRelatedSynonym>
+<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emulsifiers</oboInOwl:hasRelatedSynonym>
+<oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+</owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
 
@@ -1676,7 +1778,33 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:label xml:lang="en">obsolescence reason specification</rdfs:label>
     </owl:Class>
     
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
+<rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+<obo:IAO_0000118>CRID</obo:IAO_0000118>
+<obo:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have 'records').</obo:IAO_0000116>
+<obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation.</obo:IAO_0000116>
+<obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</obo:IAO_0000115>
+<obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
+<obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+<obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+<obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+<obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+<obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+<obo:IAO_0000112 xml:lang="en">The sentence "The article has Pubmed ID 12345." contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+</owl:Class>
 
+<!--  http://purl.obolibrary.org/obo/IAO_0020000  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+<rdfs:label xml:lang="en">identifier</rdfs:label>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+<obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+<obo:IAO_0000111 xml:lang="en">identifier</obo:IAO_0000111>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
+</owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 

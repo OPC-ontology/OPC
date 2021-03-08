@@ -1,0 +1,45 @@
+Needed Terms for import:
+
+AFO:
+
+http://purl.allotrope.org/ontologies/equipment#AFE_0002168 #transferring device
+
+http://purl.allotrope.org/ontologies/equipment#AFE_0001519 #controlled lab reactor
+
+BFO:
+http://purl.obolibrary.org/obo/BFO_0000034 # function
+
+CHMO:
+http://purl.obolibrary.org/obo/CHMO_0001532 #distillation
+	subclasss of unit operation 
+http://purl.obolibrary.org/obo/OBI_0001034 #environmental control device
+	subclass of device
+http://purl.obolibrary.org/obo/CHMO_0010020 #fume hood
+
+http://purl.obolibrary.org/obo/OBI_0000967 #container
+
+http://purl.obolibrary.org/obo/CHMO_0002572 #schlenk flask
+
+http://purl.obolibrary.org/obo/CHMO_0001574 #evaporation
+
+http://purl.obolibrary.org/obo/CHMO_0002787 #syringe pump
+
+http://purl.obolibrary.org/obo/CHMO_0002199 # rotary evaporator
+
+http://purl.obolibrary.org/obo/CHMO_0001910 # structure data
+
+http://purl.obolibrary.org/obo/CHMO_0000793 # assay data
+
+IAO:
+http://purl.obolibrary.org/obo/IAO_0000310 #document
+
+http://purl.obolibrary.org/obo/IAO_0000590 #written name
+
+OBI:
+
+http://purl.obolibrary.org/obo/OBI_0002488 #pipette
+
+ http://purl.obolibrary.org/obo/OBI_0000070 # assay
+
+
+
