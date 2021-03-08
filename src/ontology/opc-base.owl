@@ -1860,7 +1860,472 @@
         <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">unit cell c-axis length</rdfs:label>
     </owl:Class>
+ 
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">The smallest, regularly repeating material portion contained in a parallelepiped from which a crystal is formed by parallel displacements in three dimensions. [IUPAC]</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unit cell</rdfs:label>
+    </owl:Class>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell that has three perpendicular axes of equal lengths.
+equivalent to ENM:9000035
+ alt label: isometric</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cubic unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000110"/>
+        <rdfs:label xml:lang="en">P 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell that has three perpendicular axes, two of equal length</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">tetragonal unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell that has three perpendicular axes, all of different lengths</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">orthorhombic unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell of three equal lateral axes intersecting at angles of 60 degrees and a vertical axis of variable length at right angles</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hexagonal unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell of three equal lateral axes intersecting at the same angle but not perpendicularly</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trigonal unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell that has three axes of unequal length, two of which are perpendicular</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">monoclinic unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+        <obo:IAO_0000115>a unit cell in which all axes are of different length and no angle is perpendicular nor equal to any other angles.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">triclinic unit cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>a unit cell quality describing the angle between the b and c axes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell alpha internal angle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>a unit cell quality describing the angle between the a and c axes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell beta internal angle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>a unit cell quality describing the angle between the a and b axes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell gamma internal angle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>the volume of the unit cell</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>a unit cell quality indicating the number of formula units (molecules) in the unit cell</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell Z value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>a unit cell quality indicating the number of asymmetric units in the unit cell.  It is equal to the Z value divided by the lowest Wycoff position multiplicity</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell Z&apos; value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <obo:IAO_0000115>a unit cell quality indicating the density of the compound in the unit cell</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit cell crystal density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115>guidelines issued by the  International Conference on Harmonization of Technical Requirements for the Registration of Pharmaceuticals for Human Use with the objective of achieving greater harmonisation worldwide to ensure that safe, effective and high quality medicines are developed, and registered and maintained across the world in the most resource efficient manner whilst meeting high standards. [ICH]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ICH Guideline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <obo:IAO_0000115>a description of one of the characteristic external shapes (crystal class / point group) of an individual crystal family / system.  Factors that impact growth rates on the various crystal faces produce different shapes but possess the same set of symmetry elements as parent crystal class.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">habit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+        <obo:IAO_0000115>An entity of a material system which is uniform in chemical composition and physical state. [IUPAC]</obo:IAO_0000115>
+        <obo:IAO_0000119>[IUPAC]</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">thermodynamic phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000138"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>a crystalline phase is a single solid crystalline thermodynamic phase</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">crystalline solid thermodynamic phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+        <obo:IAO_0000116>a crystalline solid is a solid that has at least one crystalline phase as a component</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">crystalline solid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+        <obo:IAO_0000115>A solid in solid solution is a solution where the continuous phase is a solid and the dispersed phase is a solild. [Allotrope]</obo:IAO_0000115>
+        <obo:IAO_0000119>[Allotrope]</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">solid solution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000115>is an object aggreggate of two or more molecular entities that does not include covalent or ionic interactions</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">molecular complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142"/>
+        <obo:IAO_0000115>A co-crystal is a solid solution and a molecular complex with two or more non-solvent molecules incorporated into the unit cell in a stoichiometric amount.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">co-crystal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142"/>
+        <obo:IAO_0000115>stoichiometric solvate
+(AFM_0001094)
+A solvate is a crystalline material that has solvent molecules incorporated into the crystal lattice in a stoichiometric amount. [Allotrope]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">solvate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000144"/>
+        <obo:IAO_0000115>a hydrate is a solvate that has water as the solvent adduct.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hydrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000141"/>
+        <obo:IAO_0000115>compound is composed of ions held together by electrostatic forces termed ionic bonding.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ionic salt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139"/>
+        <obo:IAO_0000115>a crystalline phase whitout solvent in the unit cell</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anhydrous phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000147"/>
+        <obo:IAO_0000115>an anhydrous crystalline phase formedexperimentally by removing the solvent from a solvate</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">isomorphic desolvate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/material#AFM_0001034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000140"/>
+        <obo:IAO_0000115>a eutectic is a heterogeneous ensemble of individual components whose crystal structures are like discontinuous solid solutions (phase separated).  Chem. Commun., 2014, 50, 906
+A eutectic is a comglomerate of solid solutions whose melting point is less than its constituents.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">eutectic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000140"/>
+        <obo:IAO_0000115>a heterogeneous solid solution consisting of two or more polymorphs of the same chemical enti</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">concomitant polymorphs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/material#AFM_0001034"/>
+        <obo:IAO_0000115>solid dispersion
+(PCO...)
+dispersion of one or more components in a solid matrix</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">solid dispersion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000965"/>
+        <rdfs:label xml:lang="en">point group symmetry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:label xml:lang="en">Pedial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:label xml:lang="en">Pinacoidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:label xml:lang="en">Spenoidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:label xml:lang="en">hexoctahedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:label xml:lang="en">hextetrahedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:label xml:lang="en">gyroidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">in-silico modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159"/>
+        <rdfs:label xml:lang="en">Powder Indexing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159"/>
+        <rdfs:label xml:lang="en">crystal structure predictions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH Guidance for developing and understanding the manufacturing process of the drug substance.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ICH Q11 Guidance for Development and Manufacture of Drug Substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000250"/>
+        <obo:IAO_0000115>a chemical substance quality of a crystalline phase that manifests itself as a set of allowed and unallowed peaks corresponding to the diffraction of incident x-ray radiation as a function of the substance&apos;s unit cell and its space group.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">X-Ray Diffraction Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000163"/>
+        <rdfs:label xml:lang="en">Single Crystal XRPD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000163"/>
+        <rdfs:label xml:lang="en">X-Ray Powder Diffraction Pattern</rdfs:label>
+    </owl:Class>
+
+ 
 
 
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000169 -->
