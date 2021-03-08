@@ -560,7 +560,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000169"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1863,9 +1863,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000120 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000169 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>is a set of specifications maintained by the International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). for an application dossier for the registration of Medicines and designed to be used across Europe, Japan and the United States.</obo:IAO_0000115>
@@ -1874,9 +1874,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000121 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000170 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000170">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000250"/>
         <obo:IAO_0000115>a chemical substance quality of a pure crystalline phase that gives characteristic peaks and disallow others according to its unit cell.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">X-Ray diffractivity</rdfs:label>
@@ -1884,9 +1884,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000122 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000171 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000122">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000171">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000407"/>
         <obo:IAO_0000115>A beaker is a simple container for stirring, mixing and heating liquids commonly used in many laboratories. Beakers are generally cylindrical in shape, with a flat bottom. Most also have a small spout (or &quot;beak&quot;) to aid pouring.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -1895,9 +1895,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000123 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000172 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000172">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0001128"/>
         <obo:IAO_0000115>is a heating device (environmental control device) that utilizes a open flame for heating.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">bunsen burner</rdfs:label>
@@ -1905,9 +1905,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000124 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000173 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000124">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000173">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000407"/>
         <obo:IAO_0000115>A crucible is a ceramic or metal container in which metals or other substances may be melted or subjected to very high temperatures. [Wikipedia]</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -1916,9 +1916,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000125 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000174 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000174">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
         <obo:IAO_0000115>[wikipedia]</obo:IAO_0000115>
         <obo:IAO_0000115>a device to separate vaporized mixtures of liquid compounds with close volatility.</obo:IAO_0000115>
@@ -1927,10 +1927,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000126 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000175 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000175">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000174"/>
         <obo:IAO_0000115>a fractionating column made of a wide glass tube with multiple internal glass &quot;fingers&quot; that point downwards so that the vapor that enters from the lower opening condenses on the fingers and drips down from them.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Vigreux column</rdfs:label>
@@ -1938,10 +1938,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000127 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000176 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000127">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000174"/>
         <obo:IAO_0000115>is a fractionating column divided into sections (usually 3 to 6) by horizontal glass partitions or constrictions each of which seats a hollow glass bead with an inverted &quot;teardrop&quot; shape acting as check valves, closing and opening with vapor flow, and enhancing vapor-condensate mixing.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Snyder column</rdfs:label>
@@ -1949,10 +1949,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000128 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000177 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000174"/>
         <obo:IAO_0000115>a fractionating column consisting of four concentric glass tubes and a central glass rod, with a thinner glass rod coiled around it to increase the surface area.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Widmer column</rdfs:label>
@@ -1960,9 +1960,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000129 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000178 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
         <obo:IAO_0000115>a device used to condense vapors into liquid by colling.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">condensor</rdfs:label>
@@ -1970,20 +1970,20 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000130 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000179 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>a condensor consisting of a simple tube surrounded by a jacket of cooling water</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Liebig condenser</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000131 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000180 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>a condensor consisting of a jacketed long glass tube with a series of bulbs on the tube to increase the surface area upon which the vapor constituents may condense.</obo:IAO_0000115>
         <obo:IAO_0000118>bulb condensor</obo:IAO_0000118>
         <obo:IAO_0000118>reflux condensor</obo:IAO_0000118>
@@ -1993,11 +1993,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000132 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000181 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000134"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000183"/>
         <obo:IAO_0000115>is a condensor with a coolant-jacketed spiral coil running the length of the condenser serving as the vapor–condensate path, providing more surface area for cooling.</obo:IAO_0000115>
         <obo:IAO_0000118>Inland Revenue condenser</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -2006,10 +2006,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000133 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000182 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>a condensor with three concentric glass tubes where coolant circulates in both the outer jacket and the central tube to increase the cooling surface,</obo:IAO_0000115>
         <obo:IAO_0000118>double surface condenser</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -2018,10 +2018,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000134 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000183 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>a condensor consisting of a straight tube containing an internal spiral coil through which coolant flows.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">coil condenser</rdfs:label>
@@ -2029,10 +2029,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000135 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000184 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000135">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>is a condensor with a internal double spiral through which coolant flows such that the coolant inlet and outlet are both at the top</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Dimroth condenser</rdfs:label>
@@ -2040,10 +2040,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000136 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000185 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>a condensor consisting of a vertical rod that is flow-cooled from the inside that is to be immersed in the vapor to provide a condensing surface.  This condensor is also used for sublimation.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">cold finger</rdfs:label>
@@ -2051,10 +2051,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000137 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000186 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000137">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000178"/>
         <obo:IAO_0000115>a condensor consisting of a large water-cooled finger tightly fitted inside a wide cylindrical housing. The finger has a helical ridge along its length, so as to leave a narrow helical path for the vapor.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Frederichs condensor</rdfs:label>
@@ -2062,9 +2062,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000138 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000187 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000138">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000116>placeholder for</obo:IAO_0000116>
         <rdfs:label xml:lang="en">bulk substance quality</rdfs:label>
@@ -2072,19 +2072,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000139 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000188 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000188">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
         <rdfs:label xml:lang="en">environmental control device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000140 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000189 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000140">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000188"/>
         <obo:IAO_0000115>is an environmental control device used to apply heat directly to containers.</obo:IAO_0000115>
         <obo:IAO_0000118>isomantel</obo:IAO_0000118>
         <rdfs:label xml:lang="en">heating mantle</rdfs:label>
@@ -2092,10 +2092,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000141 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000190 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000191"/>
         <obo:IAO_0000115>A round-bottom flask is a flask with a spherical body and one or more necks with ground glass joints.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">round bottom flask</rdfs:label>
@@ -2103,9 +2103,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000142 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000191 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000191">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000407"/>
         <obo:IAO_0000115>Flasks are narrow-necked glass containers, typically conical or spherical, used in a laboratory to hold reagents or samples.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -2114,10 +2114,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000143 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000192 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000143">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000191"/>
         <obo:IAO_0000115>A flask for preparing liquids with volumes of high precision. It is a flask with an approximately pear-shaped body and a long neck with a circumferential fill line.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">volumetric flask</rdfs:label>
@@ -2125,9 +2125,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000144 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000193 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000144">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000193">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000116>placeholder for http://purl.allotrope.org/ontologies/equipment#AFE_0002168</obo:IAO_0000116>
         <rdfs:label xml:lang="en">transferring device</rdfs:label>
@@ -2135,20 +2135,20 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000145 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000194 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000145">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000144"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000193"/>
         <obo:IAO_0000115></obo:IAO_0000115>
         <rdfs:label xml:lang="en">syringe pump</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000146 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000195 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000142"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000191"/>
         <obo:IAO_0000115>An Erlenmeyer flask or conical flask is a type of laboratory flask which features a flat bottom, a conical body, and a cylindrical neck.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Erlenmeyer flask</rdfs:label>
@@ -2156,9 +2156,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000147 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000196 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000147">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>is a document that is a  primary record of research used to document their hypotheses, experiments and initial analysis or interpretation of these experiments serving as an organizational tool, a memory aid, and can also have a role in protecting any intellectual property that comes from the research.</obo:IAO_0000115>
         <obo:IAO_0000118>lab notebook</obo:IAO_0000118>
@@ -2168,18 +2168,18 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000148 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000197 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000148">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000197">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/equipment#AFE_0000354"/>
         <rdfs:label xml:lang="en">evaporation device</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000149 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000198 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000149">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000198">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <obo:IAO_0000115>An international nonproprietary name (INN) is a unique generic and non-proprietary name given to a pharmaceutical drug or an active ingredient  coordinated by the World Health Organization (WHO).</obo:IAO_0000115>
@@ -2189,9 +2189,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000150 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000199 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000150">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000199">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
         <obo:IAO_0000115>chemical structure is the structure of a chemical entity in terms of its molecular geometry and electronic structure.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">chemical structure</rdfs:label>
@@ -2199,9 +2199,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000151 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000200 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000151">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
         <obo:IAO_0000115>a synthesis role used to remove suspended solids from liquids by inducing flocculation (the solids begin to aggregate forming flakes, which either precipitate to the bottom or float to the surface of the liquid, and then they can be removed or collected).  Flocculants, or flocculating agents (also known as flocking agents), are chemicals that promote flocculation by causing colloids and other suspended particles in liquids to aggregate, forming a floc.</obo:IAO_0000115>
         <obo:IAO_0000118>clarifying agent</obo:IAO_0000118>
@@ -2211,28 +2211,28 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000152 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000201 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000149"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000198"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000153"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000202"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000154"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000203"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000155"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000204"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2243,9 +2243,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000153 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000202 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000153">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <obo:IAO_0000115>a unique name, assigned to a chemical substance and preferred among the possible names generated by IUPAC nomenclature. The &quot;preferred IUPAC nomenclature&quot; provides a set of rules for choosing between multiple possibilities in situations where it is important to decide on a unique name. It is intended for use in legal and regulatory situations.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -2254,9 +2254,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000154 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000203 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000154">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <obo:IAO_0000115>a unique name, assigned to a chemical substance and preferred among the possible names generated by IUPAC nomenclature. The &quot;preferred IUPAC nomenclature&quot; provides a set of rules for choosing between multiple possibilities in situations where it is important to decide on a unique name. It is intended for use in legal and regulatory situations.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -2265,9 +2265,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000155 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000204 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000155">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000204">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000115>a unique numerical identifier assigned by the Chemical Abstracts Service (CAS) to every chemical substance described in the open scientific literature.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -2276,9 +2276,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000156 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000205 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000156">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>the drug substance structure section of the CTA</obo:IAO_0000115>
         <rdfs:label xml:lang="en">CTA Section 3.2.S.1.2</rdfs:label>
@@ -2286,9 +2286,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000157 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000206 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000157">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000206">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
         <obo:IAO_0000115>a two or three dimensional representation of a chemical structure.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">chemical drawing</rdfs:label>
@@ -2296,18 +2296,18 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000158 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000207 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000158">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000207">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">molecular mass datum</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000159 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000208 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000208">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000252"/>
         <obo:IAO_0000115>a molecular entity quality which identifies each constituent element by its chemical symbol and indicates the number of atoms of each element found in each discrete molecular entity of that compound.</obo:IAO_0000115>
         <obo:IAO_0000119>[CHEMINF]</obo:IAO_0000119>
@@ -2316,18 +2316,18 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000160 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000209 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000160">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000209">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">molecular formula datum</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000161 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000210 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000161">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000210">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>The drug substance general properties section of the CTA that includes appearance, thermal behaviour, solubility, chirality  /specific rotation, crystallinity / polymorphism, hygroscopicity, solution pH and acid/base diassociation constants.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">CTA Section 3.2.S.1.3</rdfs:label>
@@ -2335,9 +2335,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000162 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000211 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000162">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000211">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>a document certified by a vendor summarizing test results and specifications for a particular batch of its product.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">certificate of analysis</rdfs:label>
@@ -2345,19 +2345,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000163 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000212 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000163">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000212">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>a desciption of a material entity based on a visual inspection.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">appearance</rdfs:label>
+        <rdfs:label xml:lang="en">appearance datum</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000164 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000213 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000164">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000213">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>the drug substance CTA section regarding manufacturers</obo:IAO_0000115>
         <rdfs:label xml:lang="en">CTA Section 3.2.S.2.1</rdfs:label>
@@ -2365,9 +2365,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000165 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000214 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000165">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000214">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
         <obo:IAO_0000115>a 2-D representation of a step-by-step progression through a synthesis or part of a synthesis showing reagents, intermediates and reaction conditions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">synthesis flow chart</rdfs:label>
@@ -2375,9 +2375,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000166 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000215 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000166">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000215">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000115>The description of the drug substance manufacturing process represents the applicant’s commitment for the manufacture of the drug substance. Reference ICH guidances Q5A, Q5B, and Q6B.</obo:IAO_0000115>
         <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
@@ -2386,9 +2386,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000167 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000216 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000167">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>the measured pH of a saturated solution of a material at a specified temperature.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">solution pH datum</rdfs:label>
@@ -2396,9 +2396,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000168 -->
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000217 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000168">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000217">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">specific rotation datum</rdfs:label>
     </owl:Class>

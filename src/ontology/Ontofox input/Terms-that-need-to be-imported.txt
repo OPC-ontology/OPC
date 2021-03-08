@@ -8,13 +8,35 @@ http://purl.allotrope.org/ontologies/equipment#AFE_0001519 #controlled lab react
 
 http://purl.allotrope.org/ontologies/result#AFR_0001985 # weight loss
 
-http://purl.allotrope.org/ontologies/result#AFR_0001995
+http://purl.allotrope.org/ontologies/result#AFR_0001995 # transition assignment
+
+http://purl.allotrope.org/ontologies/result#AFR_0001990 # transition enthalpy
+
+http://purl.allotrope.org/ontologies/result#AFR_0001984 # peak temperature
+
+http://purl.allotrope.org/ontologies/result#AFR_0001983 # peak onset temperature
+
+http://purl.allotrope.org/ontologies/result#AFR_0001984 # peak end temperature
+
+http://purl.allotrope.org/ontologies/result#AFR_0001988 # glass transition temperature
+
+http://purl.allotrope.org/ontologies/result#AFR_0001094 # assignment
 
 BFO:
 http://purl.obolibrary.org/obo/BFO_0000034 # function
 
 CHEBI:
 http://purl.obolibrary.org/obo/CHEBI_35195
+
+CHEMINF:
+
+http://semanticscience.org/resource/CHEMINF_000496 # partition coefficient
+
+http://semanticscience.org/resource/CHEMINF_000322 # logD descriptor
+
+http://semanticscience.org/resource/CHEMINF_000195 # pKa
+
+http://semanticscience.org/resource/CHEMINF_000013 # chirality
 
 CHMO:
 http://purl.obolibrary.org/obo/CHMO_0001532 #distillation
