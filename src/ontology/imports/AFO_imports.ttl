@@ -2,6 +2,8 @@
 @prefix af-q: <http://purl.allotrope.org/ontologies/quality#> .
 @prefix af-e: <http://purl.allotrope.org/ontologies/equipment#> .
 @prefix af-m: <http://purl.allotrope.org/ontologies/material#> .
+@prefix af-r: <http://purl.allotrope.org/ontologies/result#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,6 +14,7 @@
 @prefix chmo: <http://purl.obolibrary.org/obo/CHMO> .
 @prefix pato: <http://purl.obolibrary.org/obo/PATO> .
 @prefix obi: <http://purl.obolibrary.org/obo/OBI> .
+@prefix chebi: <http://purl.obolibrary.org/obo/CHEBI> .
 
 
 
@@ -296,7 +299,59 @@ af-q:AFQ_0000279 rdf:type owl:Class ;
                  
                  skos:definition "Hygroscopicity is a quality inhered in a compound by virtue of its ability to readily take up and retain water, especially from the atmosphere. [Wikipedia]" ;
                  
-                 skos:prefLabel "hygroscopicity" .				 
+                 skos:prefLabel "hygroscopicity" .		
+
+###  http://purl.allotrope.org/ontologies/result#AFR_0000992
+
+af-r:AFR_0000992 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf iao:_0000030 ;
+                 
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 
+                 dct:source <http://www.ei.sanken.osaka-u.ac.jp/pub/miz/Part3V3.pdf> ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 
+                 skos:definition "A representation form is a type of information content entity that represents an entity in a certain way. [Allotrope]" ;
+                 
+                 skos:example "plot as representation form of a temperature profile" ;
+                 
+                 skos:prefLabel "representation form" .
+				 
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000252
+
+af-q:AFQ_0000252 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf bfo:_0000019 ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ro:_0000080 ;
+                                   owl:someValuesFrom chebi:_23367
+                                 ] ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/molecular-scale> ;
+                 
+                 skos:altLabel "molecular quality" ;
+                 
+                 skos:definition "A molecular quality is a chemical quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc. [Allotrope]" ;
+                 
+                 skos:prefLabel "molecular entity quality" .
+
+
+
+###  http://purl.allotrope.org/ontologies/quality#AFQ_0000256
+
+af-q:AFQ_0000256 rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf af-q:AFQ_0000252 ;
+                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/molecular-scale> ;
+                 
+                 skos:altLabel "atomic mass" ;
+                 
+                 skos:definition "Molecular mass is a molecular quality inhered in a molecular entity that expresses its mass relative to 1/12 of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state and at rest. [Allotrope]" ;
+                 
+                 skos:prefLabel "molecular mass" .				 
 				 
 ###  http://purl.allotrope.org/ontologies/property#AFX_0002722
 

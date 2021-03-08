@@ -218,6 +218,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002609 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002609"/>
@@ -448,6 +454,36 @@
     
 
 
+    <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000252 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/molecular-scale"/>
+        <skos:altLabel>molecular quality</skos:altLabel>
+        <skos:definition>A molecular quality is a chemical quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc. [Allotrope]</skos:definition>
+        <skos:prefLabel>molecular entity quality</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000256 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000252"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.allotrope.org/voc/afo/perspective/REC/2020/12/molecular-scale"/>
+        <skos:altLabel>atomic mass</skos:altLabel>
+        <skos:definition>Molecular mass is a molecular quality inhered in a molecular entity that expresses its mass relative to 1/12 of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state and at rest. [Allotrope]</skos:definition>
+        <skos:prefLabel>molecular mass</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000279 -->
 
     <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000279">
@@ -456,6 +492,20 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.allotrope.org/voc/afo/REC/2020/12/aft"/>
         <skos:definition>Hygroscopicity is a quality inhered in a compound by virtue of its ability to readily take up and retain water, especially from the atmosphere. [Wikipedia]</skos:definition>
         <skos:prefLabel>hygroscopicity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/result#AFR_0000992 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/result#AFR_0000992">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <property:AFX_0002818 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</property:AFX_0002818>
+        <terms:source rdf:resource="http://www.ei.sanken.osaka-u.ac.jp/pub/miz/Part3V3.pdf"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.allotrope.org/voc/afo/REC/2020/12/aft"/>
+        <skos:definition>A representation form is a type of information content entity that represents an entity in a certain way. [Allotrope]</skos:definition>
+        <skos:example>plot as representation form of a temperature profile</skos:example>
+        <skos:prefLabel>representation form</skos:prefLabel>
     </owl:Class>
     
 
@@ -498,7 +548,9 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <obo:IAO_0000115> Specific Rotation is the change in orientation of monochromatic plane-polarized light, per unit distance–concentration product, as the light passes through a sample of a compound in solution [Wikipedia]</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1320,7 +1372,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000069">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000250"/>
         <obo:IAO_0000115>a physical quality indicating  the structural order of a solid in which its atoms or molecules are arranged in a regular, periodic manner.[wikipedia]</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">crystalline state</rdfs:label>
@@ -2013,8 +2065,9 @@
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000116>placeholder for</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">available</rdfs:label>
+        <rdfs:label xml:lang="en">bulk substance quality</rdfs:label>
     </owl:Class>
     
 
@@ -2139,7 +2192,7 @@
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000150">
-        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000250"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000060"/>
         <obo:IAO_0000115>chemical structure is the structure of a chemical entity in terms of its molecular geometry and electronic structure.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">chemical structure</rdfs:label>
     </owl:Class>
@@ -2162,7 +2215,30 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <rdfs:label xml:lang="en">CTA Section 2.3.S1</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000149"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000153"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000154"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000155"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>the drug substance nomenclature section of the CTA</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CTA Section 3.2.S.1.1</rdfs:label>
     </owl:Class>
     
 
@@ -2196,6 +2272,135 @@
         <obo:IAO_0000115>a unique numerical identifier assigned by the Chemical Abstracts Service (CAS) to every chemical substance described in the open scientific literature.</obo:IAO_0000115>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">chemical abstracts number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>the drug substance structure section of the CTA</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CTA Section 3.2.S.1.2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000157">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
+        <obo:IAO_0000115>a two or three dimensional representation of a chemical structure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chemical drawing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">molecular mass datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/quality#AFQ_0000252"/>
+        <obo:IAO_0000115>a molecular entity quality which identifies each constituent element by its chemical symbol and indicates the number of atoms of each element found in each discrete molecular entity of that compound.</obo:IAO_0000115>
+        <obo:IAO_0000119>[CHEMINF]</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">molecular formula</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">molecular formula datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>The drug substance general properties section of the CTA that includes appearance, thermal behaviour, solubility, chirality  /specific rotation, crystallinity / polymorphism, hygroscopicity, solution pH and acid/base diassociation constants.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CTA Section 3.2.S.1.3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115>a document certified by a vendor summarizing test results and specifications for a particular batch of its product.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">certificate of analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>a desciption of a material entity based on a visual inspection.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">appearance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>the drug substance CTA section regarding manufacturers</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CTA Section 3.2.S.2.1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
+        <obo:IAO_0000115>a 2-D representation of a step-by-step progression through a synthesis or part of a synthesis showing reagents, intermediates and reaction conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">synthesis flow chart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>The description of the drug substance manufacturing process represents the applicant’s commitment for the manufacture of the drug substance. Reference ICH guidances Q5A, Q5B, and Q6B.</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CTA Section 3.2.S.2.2 Description of Manufacturing Process and Process Controls</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>the measured pH of a saturated solution of a material at a specified temperature.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">solution pH datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">specific rotation datum</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

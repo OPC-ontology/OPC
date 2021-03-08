@@ -6,8 +6,15 @@ http://purl.allotrope.org/ontologies/equipment#AFE_0002168 #transferring device
 
 http://purl.allotrope.org/ontologies/equipment#AFE_0001519 #controlled lab reactor
 
+http://purl.allotrope.org/ontologies/result#AFR_0001985 # weight loss
+
+http://purl.allotrope.org/ontologies/result#AFR_0001995
+
 BFO:
 http://purl.obolibrary.org/obo/BFO_0000034 # function
+
+CHEBI:
+http://purl.obolibrary.org/obo/CHEBI_35195
 
 CHMO:
 http://purl.obolibrary.org/obo/CHMO_0001532 #distillation
@@ -39,7 +46,11 @@ OBI:
 
 http://purl.obolibrary.org/obo/OBI_0002488 #pipette
 
- http://purl.obolibrary.org/obo/OBI_0000070 # assay
+http://purl.obolibrary.org/obo/OBI_0000070 # assay
 
+http://purl.obolibrary.org/obo/OBI_0001554 # rate constant
 
+PATO:
+
+http://purl.obolibrary.org/obo/PATO_0001536 #solubility
 
