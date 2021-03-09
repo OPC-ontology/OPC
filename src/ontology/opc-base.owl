@@ -13,9 +13,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:property="http://purl.allotrope.org/ontologies/property#">
+     xmlns:property="http://purl.allotrope.org/ontologies/property#"
+     xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opc.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/BFO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHEMINF_imports.owl."/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/PATO_imports.owl."/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/RO_imports.owl"/>
@@ -1672,6 +1674,12 @@
         <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">unit cell c-axis length</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000965 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000965"/>
     
 
 

@@ -11,6 +11,7 @@
 @prefix chmo: <http://purl.obolibrary.org/obo/CHMO> .
 @prefix pato: <http://purl.obolibrary.org/obo/PATO> .
 
+<http://purl.obolibrary.org/obo/opc/PATO_imports.owl.> a owl:Ontology .
 
 
 ###  http://purl.allotrope.org/ontologies/equipment#AFE_0000354
