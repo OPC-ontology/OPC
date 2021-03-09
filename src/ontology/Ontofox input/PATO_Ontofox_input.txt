@@ -5,14 +5,16 @@ http://purl.obolibrary.org/obo/opc/PATO_imports.owl.
 PATO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/PATO_0000965
+http://purl.obolibrary.org/obo/PATO_0000965 #
+http://purl.obolibrary.org/obo/PATO_0000122 #
+http://purl.obolibrary.org/obo/PATO_0001536 #solubility
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000051 #morphology
-subClassOf http://purl.obolibrary.org/obo/BFO_0000019
+subClassOf http://purl.obolibrary.org/obo/BFO_0000001
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties

@@ -15,9 +15,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:property="http://purl.allotrope.org/ontologies/property#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opc.owl">
-        <owl:imports rdf:resource="file:/C:/Users/schaferw/OneDrive%20-%20Merck%20Sharp%20&amp;%20Dohme,%20Corp/Documents/OPC/src/ontology/imports/AFO_imports.ttl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/BFO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/PATO_imports.owl."/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/RO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl"/>
@@ -28,7 +27,7 @@
         <dc:description xml:lang="en">OPC is a formal ontology that aims to standardly represent entities and relations among entities in the domain of process chemistry.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
-        <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
+        <dc:title xml:lang="en">OPC: Ontology of Process Chemistry</dc:title>
         <oboInOwl:creation_date>2-27-2021</oboInOwl:creation_date>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.73</owl:versionInfo>
     </owl:Ontology>
@@ -52,6 +51,7 @@
     
 
 
+
     <!-- http://purl.allotrope.org/ontologies/property#AFX_0002865 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.allotrope.org/ontologies/property#AFX_0002865"/>
@@ -73,6 +73,29 @@
     <!-- http://purl.org/dc/terms/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+=======
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+
     
 
 
@@ -94,11 +117,11 @@
     
 
 
+
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
-
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
@@ -147,6 +170,7 @@
     
 
 
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -163,7 +187,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
     
-
 
     <!-- http://purl.obolibrary.org/obo/OPC_0000007 -->
 
@@ -213,6 +236,7 @@
     
 
 
+
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
@@ -222,6 +246,41 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002180"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002230 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502"/>
+>>>>>>> master
     
 
 
@@ -240,6 +299,7 @@
      -->
 
     
+
 
 
     <!-- http://purl.allotrope.org/ontologies/equipment#AFE_0000354 -->
@@ -315,6 +375,8 @@
     
 
 
+=======
+>>>>>>> master
     <!-- http://purl.allotrope.org/ontologies/material#AFM_0001034 -->
 
     <owl:Class rdf:about="http://purl.allotrope.org/ontologies/material#AFM_0001034">
@@ -454,7 +516,6 @@
     </owl:Class>
     
 
-
     <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000252 -->
 
     <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000252">
@@ -485,6 +546,8 @@
     
 
 
+=======
+>>>>>>> master
     <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000279 -->
 
     <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000279">
@@ -495,8 +558,6 @@
         <skos:prefLabel>hygroscopicity</skos:prefLabel>
     </owl:Class>
     
-
-
     <!-- http://purl.allotrope.org/ontologies/result#AFR_0000992 -->
 
     <owl:Class rdf:about="http://purl.allotrope.org/ontologies/result#AFR_0000992">
@@ -508,12 +569,6 @@
         <skos:example>plot as representation form of a temperature profile</skos:example>
         <skos:prefLabel>representation form</skos:prefLabel>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
     
 
 
@@ -592,6 +647,8 @@
     
 
 
+=======
+>>>>>>> master
     <!-- http://purl.obolibrary.org/obo/OPC_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000001">
@@ -657,7 +714,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A direct information entity that is the output of DoE and defines how experiment is designed.</obo:IAO_0000115>
+        <obo:IAO_0000115>The multidimensional combination of imput variables (e.g. material attributes) and process parameters that have been demonstrated to provide assurance of product quality.   Working within the range is not considered as a change.  Movement out of the design space is considered to be a change and would normally institute a regulatory postapproval change process.  Design space is proposed by the applicant and is subject to regulatory assessment and approval.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH Q11]</obo:IAO_0000119>
         <rdfs:label xml:lang="en">design space</rdfs:label>
     </owl:Class>
     
@@ -1841,6 +1899,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the length of the a-axis of a unit cell</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">unit cell a-axis length</rdfs:label>
@@ -1852,6 +1911,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the length of the b-axis of a unit cell</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">unit cell b-axis length</rdfs:label>
@@ -1863,12 +1923,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">the length of the c-axis of a unit cell</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">unit cell c-axis length</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000120 -->
 
@@ -2333,8 +2392,6 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000163"/>
         <rdfs:label xml:lang="en">X-Ray Powder Diffraction Pattern</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000169 -->
 
@@ -2875,6 +2932,8 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">specific rotation datum</rdfs:label>
     </owl:Class>
+=======
+>>>>>>> master
 </rdf:RDF>
 
 

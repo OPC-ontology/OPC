@@ -36,6 +36,7 @@ http://purl.obolibrary.org/obo/BFO_0000147
 http://purl.obolibrary.org/obo/BFO_0000006
 http://purl.obolibrary.org/obo/BFO_0000029
 http://purl.obolibrary.org/obo/BFO_0000006
+http://purl.obolibrary.org/obo/BFO_0000027
 
 http://purl.obolibrary.org/obo/BFO_0000035 # process boundary 
 
