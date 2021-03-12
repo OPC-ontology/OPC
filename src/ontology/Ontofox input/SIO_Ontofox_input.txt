@@ -1,0 +1,21 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/opc/imports/SIO_imports.owl
+
+[Source ontology]
+SIO
+
+[Low level source term URIs]
+http://semanticscience.org/resource/SIO_000368
+
+[Top level source term URIs and target direct superclass URIs]
+http://semanticscience.org/resource/SIO_000075
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
+

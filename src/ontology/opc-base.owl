@@ -2,27 +2,38 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/opc.owl#"
      xml:base="http://purl.obolibrary.org/obo/opc.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:SBO="http://biomodels.net/SBO/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:property="http://purl.allotrope.org/ontologies/property#">
+     xmlns:property="http://purl.allotrope.org/ontologies/property#"
+     xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opc.owl">
         <owl:imports rdf:resource="file:/C:/Users/schaferw/OneDrive%20-%20Merck%20Sharp%20&amp;%20Dohme,%20Corp/Documents/OPC/src/ontology/imports/AFO_imports.ttl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/BFO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO2.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/PATO_imports.owl."/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/CHEBI_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/FIX_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/IAO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/REX_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/SBO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/SIO_imports.owl"/>
         <dc:creator xml:lang="en">Anna Dunn</dc:creator>
         <dc:creator xml:lang="en">Wes A. Schafer</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
@@ -482,6 +493,16 @@
     
 
 
+    <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000168 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000187"/>
+        <obo:IAO_0000116>do we import?</obo:IAO_0000116>
+        <rdfs:label>molar concentration</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.allotrope.org/ontologies/quality#AFQ_0000250 -->
 
     <owl:Class rdf:about="http://purl.allotrope.org/ontologies/quality#AFQ_0000250">
@@ -551,6 +572,26 @@
         <skos:definition>A representation form is a type of information content entity that represents an entity in a certain way. [Allotrope]</skos:definition>
         <skos:example>plot as representation form of a temperature profile</skos:example>
         <skos:prefLabel>representation form</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/result#AFR_0002176 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/result#AFR_0002176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000187"/>
+        <obo:IAO_0000116>term to be released in Allotrope&apos;s 2021 1Q AFO release</obo:IAO_0000116>
+        <rdfs:label>heat flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/result#AFR_0002312 -->
+
+    <owl:Class rdf:about="http://purl.allotrope.org/ontologies/result#AFR_0002312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000116>placeholder - part of AFO 2021-1Q release</obo:IAO_0000116>
+        <rdfs:label>Heat Flow profile</rdfs:label>
     </owl:Class>
     
 
@@ -1603,6 +1644,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000115>Chemical kinetics, also known as reaction kinetics, is the branch of physical chemistry that is concerned with understanding the rates of chemical reactions. It is to be contrasted with thermodynamics, which deals with the direction in which a process occurs but in itself tells nothing about its rate. Chemical kinetics includes investigations of how experimental conditions influence the speed of a chemical reaction and yield information about the reaction&apos;s mechanism and transition states, as well as the construction of mathematical models that also can describe the characteristics of a chemical reaction.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mechanistic and kinetic determination</rdfs:label>
     </owl:Class>
@@ -1801,6 +1843,55 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000233"/>
+        <obo:IAO_0000115>kinetic determination method to determine the partial order of a reactant by measuring the concentration of that reactant with all other reactants in large excess</obo:IAO_0000115>
+        <obo:IAO_0000118>Ostwald kinetic method</obo:IAO_0000118>
+        <obo:IAO_0000118>isolation kinetic method</obo:IAO_0000118>
+        <rdfs:label>method of flooding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:IAO_0000115>is an initial slow stage of a chemical reaction after which the reaction accelerates.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>induction period</rdfs:label>
+        <skos:note>In some catalytic reactions, a pre-catalyst needs to undergo a transformation to form the active catalyst, before the catalyst can take effect. Time is required for this transformation, hence the induction period.
+Similarly, for an autocatalytic reaction, where one of the reaction products catalyzes the reaction itself, the rate of reaction is low initially until sufficient products have formed to catalyze the reaction.
+
+Reactions generally accelerate when heat is applied. Where a reaction is exothermic, the rate of the reaction may initially be low. As the reaction proceeds, heat is generated, and the rate of reaction increases. This type of reaction often exhibits an induction period as well.
+
+The reactions to form Grignard reagents are notorious for having induction periods. This is usually due to two reasons: Firstly, the thin film of oxide on the magnesium reagent must be removed before the bulk magnesium can react. Secondly, Grignard reactions, while exothermic, are typically conducted at low temperature for better selectivity. For these two reasons, Grignard reactions often can have a long induction period, followed by a thermal runaway, even causing the reaction solvent to boil-off.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000070"/>
+        <obo:IAO_0000115>the assessed reactivity of the mutagenic impurity in the processing conditions</obo:IAO_0000115>
+        <rdfs:label>assessed reactivity purge factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000070"/>
+        <obo:IAO_0000115>an assessed purge factor based on the solubility of the impurity in the reaction solvent and therefore its propensity to be purged in the mother liquors of steps that involve an isolation of the solid intermediate/product in that step.</obo:IAO_0000115>
+        <rdfs:label>assessed solubility purge factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000109">
@@ -1922,6 +2013,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000070"/>
+        <obo:IAO_0000115>an assessed purge factor based on the relative boiling point of the impurity to the reaction solvent and therefore its propensity to be purged in the headspace of steps to which the impurity is subjected..</obo:IAO_0000115>
+        <rdfs:label>assessed volatility purge factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000070"/>
+        <obo:IAO_0000115>an assessed purge factor based on the ionisability of the impurity relative to desired compound and therefore its propensity to be purged in the waste layer of a biphasic system in steps that involve such an extraction.</obo:IAO_0000115>
+        <rdfs:label>assessed ionisability purge factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000070"/>
+        <obo:IAO_0000115>the assessed ratio of maximum possible concentration before purging to its concentration after purging (the final product).  It is simply the product of all the assessed purge factors of each reaction step to which the impurity is subjected.</obo:IAO_0000115>
+        <rdfs:label>overal assessed purge factor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000218">
@@ -1966,6 +2087,761 @@ Reference ICH guidance Q6A.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <obo:IAO_0000115>is an ICH guideline and objective specification for the
+identification, categorization, qualification, and control of these mutagenic impurities in pahrmaceutical products to limit potential carcinogenic risk.</obo:IAO_0000115>
+        <rdfs:label>ICH M7 Assessment and Control of DNA Reactive (Mutagenic) Impurities in Pharmaceuticals To Limit Potential Carcinogenic Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159"/>
+        <rdfs:label>DEREK Mutagen Prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000159"/>
+        <rdfs:label>MCASE Mutagen Prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000225">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000368"/>
+        <obo:IAO_0000115>an equation that links the initial or forward reaction rate with the concetrations or pressures of the reactants and constant parameters (normally rate coefficients and partial reaction orders).</obo:IAO_0000115>
+        <obo:IAO_0000118>rate law</obo:IAO_0000118>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>rate equation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000085"/>
+        <obo:IAO_0000115>is a subset of a broad range of kinetic techniques utilized to determine the rate laws of chemical reactions and to aid in elucidation of reaction mechanisms. While the concepts guiding reaction progress kinetic analysis are not new, the process was formalized by Professor Donna Blackmond (currently at Scripps Research Institute) in the late 1990s and has since seen increasingly widespread use. Unlike more common pseudo-first-order analysis, in which an overwhelming excess of one or more reagents is used relative to a species of interest, RPKA probes reactions at synthetically relevant conditions (i.e. with concentrations and reagent ratios resembling those used in the reaction when not exploring the rate law.) Generally, this analysis involves a system in which the concentrations of multiple reactants are changing measurably over the course of the reaction. As the mechanism can vary depending on the relative and absolute concentrations of the species involved, this approach obtains results that are much more representative of reaction behavior under commonly utilized conditions than do traditional tactics. Furthermore, information obtained by observation of the reaction over time may provide insight regarding unexpected behavior such as induction periods, catalyst deactivation, or changes in mechanism.</obo:IAO_0000115>
+        <obo:IAO_0000118>RPKA</obo:IAO_0000118>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>Reaction Progress Kinetic Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000115>a workflow that utilizes online and at-line measurements to understand chemical processes by defining and monitoring ...</obo:IAO_0000115>
+        <obo:IAO_0000118>PAT</obo:IAO_0000118>
+        <rdfs:label>process analytical technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000085"/>
+        <rdfs:label>steady-state approximation analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000229">
+        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
+        <obo:IAO_0000115>For elementary (single step) reactions, the patial rate order is equal to the stoiciometric coefficient of the reactant.</obo:IAO_0000115>
+        <rdfs:label>partial rate order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000230">
+        <rdfs:subClassOf rdf:resource="http://biomodels.net/SBO/SBO_0000009"/>
+        <rdfs:label>overall reaction order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000048"/>
+        <obo:IAO_0000115>a quality process profile that tracks the concentration changes of a species</obo:IAO_0000115>
+        <rdfs:label>concentration profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>the speed at which a chemical reaction takes place, defined as proportional to the increase in the concentration of a product per unit time and to the decrease in the concentration of a reactant per unit time.</obo:IAO_0000115>
+        <obo:IAO_0000116>http://purl.obolibrary.org/obo/STATO_0000071
+reaction rate is a measurement datum which represents the speed of a chemical reaction turning reactive species into product species of event (i.e the number of such conversions)s occuring over a time interval
+
+Term IRI: http://purl.obolibrary.org/obo/PATO_0000161
+Definition: A quality of a single process inhering in a bearer by virtue of the bearer&apos;s occurrence per unit time. [database_cross_reference: PATOC:melissa]</obo:IAO_0000116>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>reaction rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000085"/>
+        <obo:IAO_0000115>a kinetic determination method that measures the concention of reaction species which is proportional to the integral of the reaction rate.</obo:IAO_0000115>
+        <rdfs:label>integral kinetic measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000085"/>
+        <obo:IAO_0000115>a kinetic determination methos that measures reaction rate directly.  (d[]/dt)</obo:IAO_0000115>
+        <rdfs:label>differential kinetic measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000234"/>
+        <obo:IAO_0000115>a series of experiments whereby the initial concentration of each reactant is varied while the other reactant concentratios are kept constant allowing the determination of the rate order of the reactant.</obo:IAO_0000115>
+        <rdfs:label>method of initial rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000236">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/result#AFR_0000992"/>
+        <obo:IAO_0000115>a plot of the differential kinetic measurement as the y-axis vs. the integral measurement as the x-axis.</obo:IAO_0000115>
+        <rdfs:label>graphical rate equation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000085"/>
+        <obo:IAO_0000115>a series of kinetic experiments that compare concentration vs. time profiles to identify product inhibition, catalyst deactivation and the order of components including catalysts.</obo:IAO_0000115>
+        <rdfs:label>Variable Time Normalisation Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000238">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/role#AFRL_0000364"/>
+        <obo:IAO_0000115>is an impurity role of DNA reactive material that have significant carcinogenic risk</obo:IAO_0000115>
+        <rdfs:label>mutagenic impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>domatic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>prismatic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>rhombic-disphenoidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>rhombic-pyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>rhombic-dipyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>diploidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tetartoidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000112"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000115"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tetragonal-pyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tetragonal-disphenoidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tetragonal-dipyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tetragonal-trapezohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ditetragonal-pyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tetragonal-scalenohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000123"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ditetragonal-dipyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000112"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000115"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>trigonal-pyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>rhombohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>trigonal-trapezohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ditrigonal-pyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ditrigonal-scalenohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000112"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000115"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>hexagonal-pyrimidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>trigonal-dipyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>hexagonal-dipyrimidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>hexagonal-trapezohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>dihexagonal-trapezohedral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ditrigonal-dipyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>dihexagonal-dipyramidal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000107">
+        <obo:IAO_0000115>The equilibrium state is characterized by a constant, designated K, which provides quantitative information of the extent of a reaction and is related to the ratio of the concentrations of reactants and products</obo:IAO_0000115>
+        <rdfs:label>equilibrium</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000120 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000120">
@@ -1985,15 +2861,6 @@ Reference ICH guidance Q6A.</obo:IAO_0000115>
 equivalent to ENM:9000035
  alt label: isometric</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cubic unit cell</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000122 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000110"/>
-        <rdfs:label xml:lang="en">P 1</rdfs:label>
     </owl:Class>
     
 
@@ -2317,6 +3184,25 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000153">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000112"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000115"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Pedial</rdfs:label>
     </owl:Class>
     
@@ -2326,6 +3212,18 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000154">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Pinacoidal</rdfs:label>
     </owl:Class>
     
@@ -2335,6 +3233,25 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000155">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000112"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OPC_0000115"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000127"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Spenoidal</rdfs:label>
     </owl:Class>
     
@@ -2344,6 +3261,18 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000156">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">hexoctahedral</rdfs:label>
     </owl:Class>
     
@@ -2353,6 +3282,18 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000157">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">hextetrahedral</rdfs:label>
     </owl:Class>
     
@@ -2362,6 +3303,18 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000158">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000152"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.allotrope.org/ontologies/property#AFX_0002722"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OPC_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">gyroidal</rdfs:label>
     </owl:Class>
     
@@ -2971,6 +3924,26 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">specific rotation datum</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REX_0000058">
+        <obo:IAO_0000116>Term IRI: http://purl.obolibrary.org/obo/REX_0000058
+Definition: An elementary reaction, constituting one of the stages of a stepwise reaction in which a reaction intermediate (or, for the first step, the reactants) is converted into the next reaction intermediate (or, for the last step, the products) in the sequence of intermediates between reactants and products. [database_cross_reference: http://goldbook.iupac.org/R05178.html]</obo:IAO_0000116>
+        <obo:IAO_0000116>Term IRI: http://purl.obolibrary.org/obo/REX_0000068
+Definition: A set of one or more (possibly experimentally inseparable) reaction steps leading to and/or from a detectable or presumed reaction intermediate. [database_cross_reference: http://goldbook.iupac.org/R05177.html]</obo:IAO_0000116>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REX_0000220">
+        <obo:IAO_0000118>catalyst poisoning</obo:IAO_0000118>
+    </rdf:Description>
 </rdf:RDF>
 
 
