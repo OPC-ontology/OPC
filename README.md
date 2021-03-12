@@ -12,8 +12,8 @@ Oliver He, Wes Schafer. [Extending the Allotrope Framework: An Ontological Repre
 OPC OWL source: https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl?token=ABD22Q5IUI2T6A2KA2XTOQK7LPFXK 
 
 ## OPC Developers
-- Wes Schafer
-- Oliver He
-- Anna Dunn
-- Zachary Dance 
+- Wes Schafer, Merck 
+- Oliver He， University of Michigan, Ann Arbor, MI, USA.
+- Anna Dunn, GSK
+- Zachary Dance  
 
