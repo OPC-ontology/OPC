@@ -1,7 +1,7 @@
 # OPC: Ontology of Process Chemistry
 OPC: A formal ontology in the domain of process chemistry
 
-The Ontology of Process Chemistry (OPC) is aimed to be a community-based ontology in the domain of [process chemistry](https://en.wikipedia.org/wiki/Process_chemistry). Narrowly speaking, process chemistry is an important domain in pharmaceutical chemistry that concerns the development and optimization of a synthetic scheme and pilot plant procedure to manufacture compounds for drug development. Broadly speaking, process chemistry also covers areas beyond the pharmaceutical domain.  
+The Ontology of Process Chemistry (OPC) is aimed to be a community-based ontology in the domain of process chemistry, which is a branch of chemistry (including pharmaceutical chemistry) that studies the development and optimization of the production processes for chemical compounds, and the scaling up of laboratory chemical reactions. Process chemistry differs from medicinal chemistry, which focuses on the designing and synthesis of molecules on a small scale in the early drug discovery phase.  
 
 OPC was initiated as a collaborative project between Merck and Unversity of Michgan. Oliver He from Unversity of Michgan received a Merck fund and has been actively working with Wes Schafer at Merck on the OPC development. Later our OPC development team has been expanded to include more developers, including Anna Dunn and Zachary Dance.    
 
