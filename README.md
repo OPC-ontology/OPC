@@ -11,6 +11,9 @@ Oliver He, Wes Schafer. [Extending the Allotrope Framework: An Ontological Repre
 ## OPC Sources
 OPC OWL source: https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl?token=ABD22Q5IUI2T6A2KA2XTOQK7LPFXK 
 
+## License of OPC Sources
+CC BY-4: https://creativecommons.org/licenses/by/4.0/ 
+
 ## OPC Developers
 - Wes Schafer, Merck 
 - Oliver He， University of Michigan, Ann Arbor, MI, USA.
