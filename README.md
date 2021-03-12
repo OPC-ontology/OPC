@@ -16,7 +16,7 @@ CC BY-4: https://creativecommons.org/licenses/by/4.0/
 
 ## OPC Developers
 - Wes Schafer, Merck Process Research & Development, Rahway, NJ, USA.  
-- Oliver He， University of Michigan Medical School, Ann Arbor, MI, USA.
+- Oliver He, University of Michigan Medical School, Ann Arbor, MI, USA.
 - Anna Dunn, Pharmaceutical Development, GlaxoSmithKline (GSK), Upper Providence, Pennsylvania, USA
 - Zachary Dance, Merck Process Research & Development, Rahway, NJ, USA.  
 
