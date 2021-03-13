@@ -709,3 +709,12 @@ af-rl:AFRL_0000167 rdf:type owl:Class ;
                    skos:altLabel "operand" ;
                    skos:definition "The role of a participant that is being changed in the process (passive participant) from an input state to an output state. [Allotrope]" ;
                    skos:prefLabel "operand role" .
+				   
+###  http://purl.allotrope.org/ontologies/result#AFR_0000916
+af-r:AFR_0000916 rdf:type owl:Class ;
+                 rdfs:subClassOf http://purl.obolibrary.org/obo/IAO_0000030 ;
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/aft> ;
+                 skos:definition "A classification is a proposition that categorizes things into classes or collections of things differentiated by some criteria. [Allotrope]" ;
+                 skos:prefLabel "classification" .
+				 

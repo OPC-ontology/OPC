@@ -130,7 +130,7 @@ CHMO
 
 
 [Top level source term URIs and target direct superclass URIs]
- http://purl.obolibrary.org/obo/OBI_0000094 
+http://purl.obolibrary.org/obo/OPC_0000051
 
 [Source term retrieval setting]
 includeAllIntermediates

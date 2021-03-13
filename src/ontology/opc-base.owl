@@ -41,7 +41,7 @@
         <dc:description xml:lang="en">OPC is a formal ontology that aims to standardly represent entities and relations among entities in the domain of process chemistry.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
-        <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
+        <dc:title xml:lang="en">OPC: Ontology of Process Chemistry</dc:title>
         <oboInOwl:creation_date>2-27-2021</oboInOwl:creation_date>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.73</owl:versionInfo>
     </owl:Ontology>
@@ -608,6 +608,158 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001685">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001904 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001904">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002770 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002770">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002771 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002771">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002772 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002772">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002916">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FIX_0000277 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FIX_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
@@ -673,22 +825,31 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000376 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000376"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0600014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPC_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -717,8 +878,9 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000008"/>
-        <rdfs:label xml:lang="en">full factorial design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>an experimental design to limit the number of experiments covering the space by assuming the Interactions between the factors are negligible</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Plackett–Burman design</rdfs:label>
     </owl:Class>
     
 
@@ -778,7 +940,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
         <rdfs:label xml:lang="en">factorial design</rdfs:label>
     </owl:Class>
     
@@ -905,19 +1067,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPC_0000021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="en">role of chemical entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPC_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">starting material role in synthesis</rdfs:label>
     </owl:Class>
     
@@ -926,7 +1079,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">intermediate material role in synthesis</rdfs:label>
     </owl:Class>
     
@@ -1112,7 +1265,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">chemical product role</rdfs:label>
     </owl:Class>
     
@@ -1121,7 +1274,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">chemical impurity role</rdfs:label>
     </owl:Class>
     
@@ -1211,7 +1364,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <rdfs:label xml:lang="en">AFO_303281: quality process profile</rdfs:label>
+        <rdfs:label xml:lang="en">quality process profile</rdfs:label>
     </owl:Class>
     
 
@@ -1417,7 +1570,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:comment>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</rdfs:comment>
@@ -1438,7 +1591,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>The role of a crystalline solid material input in a crystallization to promote nuleation or crystal growth.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:comment>A seed crystal is a small piece of single crystal or polycrystal material from which a large crystal of typically the same material is to be grown in a laboratory. Used to replicate material, the use of seed crystal to promote growth avoids the otherwise slow randomness of natural crystal growth and allows manufacture on a scale suitable for industry [wikipedia].</rdfs:comment>
@@ -1450,7 +1603,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>the role of solids in a slurry</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">precipitate role</rdfs:label>
@@ -1505,7 +1658,7 @@
     <!-- http://purl.obolibrary.org/obo/OPC_0000072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>a debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mother liquor role</rdfs:label>
@@ -2833,6 +2986,200 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH guideline about  identifying, qualifying and specifying impurities in drug substance.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>ICH Q3A Impurities in New Drug Substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>an ICH guideline for the use residual solvents (organic volatile impurities) 
+in the manufacture of drug substances and dosage forms, and sets pharmaceutical limits for  in drug products.</obo:IAO_0000115>
+        <rdfs:label>ICH Q3C Residual Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <obo:IAO_0000115>a quality guideline for the control of elemental impurities in new drug products (medicinal products), establishing Permitted Daily Exposures (PDEs) for 24 Elemental Impurities (EIs) for drug products administered by the oral, parenteral and inhalation routes of administration.</obo:IAO_0000115>
+        <rdfs:label>ICH Q3D Guidance for Elemental Impurities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH guidance on the setting and justification of acceptance criteria and the selection of test procedures for new drug substances of synthetic chemical origin, and new drug products produced from them, which have not been registered previously in the ICH regions.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>ICH Q6A Specifications: Test Procedures and Acceptance Criteria for Chemical Substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH Guideline for the manufacture of APIs for use in human drug (medicinal) products.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>Q7 Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000270">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/role#AFRL_0000364"/>
+        <obo:IAO_0000115>Residual solvents in pharmaceuticals are defined here as organic volatile chemicals that are used or produced in the manufacture of drug substances or excipients, or in the preparation of drug products. The solvents are not completely removed by practical manufacturing techniques.</obo:IAO_0000115>
+        <obo:IAO_0000119>[FDA]</obo:IAO_0000119>
+        <rdfs:label>residual solvent impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000270"/>
+        <obo:IAO_0000115>Class 1 solvents: Solvents to be avoided
+Known human carcinogens, strongly suspected human carcinogens, and environmental
+hazards.</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label>ICH Q6A Class 1 Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000270"/>
+        <obo:IAO_0000115>Class 2 solvents: Solvents to be limited
+Non-genotoxic animal carcinogens or possible causative agents of other irreversible
+toxicity such as neurotoxicity or teratogenicity.
+Solvents suspected of other significant but reversible toxicities</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label>ICH Q6A Class 2 Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000270"/>
+        <obo:IAO_0000115>Class 3 solvents: Solvents with low toxic potential
+Solvents with low toxic potential to man; no health-based exposure limit is needed. Class
+3 solvents have PDEs of 50 mg or more per day.</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label>ICH Q6A Class 3 Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000115>Permitted Daily Exposure:
+The maximum acceptable intake per day of residual solvent in pharmaceutical products</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>Permitted Daily Exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>an experimental design involving the testing of factors, or causes, one at a time instead of multiple factors simultaneously.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>one-factor-at-a-time experimental design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>The design of an experiment intended to test a hypothesis, and describe or explain empirical data obtained under various experimental conditions.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://edamontology.org/topic_3678</obo:IAO_0000119>
+        <rdfs:label>experimental design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process during which a material entity undergoes a rapid increase in volume, releasing gasses and various forms of energy, often including thermal, light and sound energy.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>explosion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>developing an understanding of the hazards of a chemical process and developing methods to safely manage and minimize the risks of the process.</obo:IAO_0000115>
+        <rdfs:label>process safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>an experimental design to produce a response curve sufficient to fit quadratic models of the individual factors</obo:IAO_0000115>
+        <obo:IAO_0000119>George Box, Donald Behnken, &quot;Some new three level designs for the study of quantitative variables&quot;, Technometrics, Volume 2, pages 455–475, 1960</obo:IAO_0000119>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>Box–Behnken design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>a experimental design consisting of three distinct sets of experimental runs: 
+A factorial (perhaps fractional) design in the factors studied, each having two levels;
+A set of center points, experimental runs whose values of each factor are the medians of the values used in the factorial portion. This point is often replicated in order to improve the precision of the experiment;
+A set of axial points, experimental runs identical to the centre points except for one factor, which will take on values both below and above the median of the two factorial levels, and typically both outside their range. All factors are varied in this way.</obo:IAO_0000115>
+        <rdfs:label>Central Composite Design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REX_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000107 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000107">
@@ -3724,7 +4071,7 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000200 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000200">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>a synthesis role used to remove suspended solids from liquids by inducing flocculation (the solids begin to aggregate forming flakes, which either precipitate to the bottom or float to the surface of the liquid, and then they can be removed or collected).  Flocculants, or flocculating agents (also known as flocking agents), are chemicals that promote flocculation by causing colloids and other suspended particles in liquids to aggregate, forming a floc.</obo:IAO_0000115>
         <obo:IAO_0000118>clarifying agent</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
