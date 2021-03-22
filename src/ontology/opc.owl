@@ -41,7 +41,7 @@
         <dc:description xml:lang="en">OPC is a formal ontology that aims to standardly represent entities and relations among entities in the domain of process chemistry.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
-        <dc:title xml:lang="en">OPC: Ontology of Process Chmistry</dc:title>
+        <dc:title xml:lang="en">OPC: Ontology of Process Chemistry</dc:title>
         <oboInOwl:creation_date>2-27-2021</oboInOwl:creation_date>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.73</owl:versionInfo>
     </owl:Ontology>
@@ -714,9 +714,21 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
     
 
 
@@ -3167,8 +3179,8 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <obo:IAO_0000602>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </obo:IAO_0000602>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000002</oboInOwl:id>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:label>continuant</rdfs:label>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
     
 
@@ -4203,7 +4215,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role played by the molecular entity or part thereof within a biological context.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
@@ -4333,7 +4345,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHEBI_33232 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33232">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intended use of the molecular entity or part thereof by humans.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
@@ -4872,19 +4884,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50566</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitric oxide donor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50906</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</rdfs:label>
     </owl:Class>
     
 
@@ -5619,7 +5618,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0000999 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000999">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method that results in the separation of two or more components according to some property.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000002</oboInOwl:hasAlternativeId>
@@ -5722,7 +5721,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001301 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method used to synthesise a sample.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001301</oboInOwl:id>
@@ -5775,7 +5774,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001464 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001464">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any time-dependent change of the properties of a precipitate e.g. loss of water or growth of crystals as a result of prolonged heat treatment.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age hardening</oboInOwl:hasExactSynonym>
@@ -5847,7 +5846,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001532 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method of separating mixtures based on differences in their volatilities in a boiling liquid mixture. The components in a sample mixture are vaporised by the application of heat and then cooled by the action of cold water in a condenser.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001532</oboInOwl:id>
@@ -5981,7 +5980,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001549 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001549">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of removing a solvent from a substance.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drying</oboInOwl:hasRelatedSynonym>
@@ -6097,7 +6096,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001574 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001574">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The physical process by which a liquid substance is converted to a gas or vapour. This may occur at or below the normal boiling point of the liquid (the temperature at which a liquid boils at 1 atmosphere pressure) and the process is endothermic.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001574</oboInOwl:id>
@@ -6133,7 +6132,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001577">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001577</oboInOwl:id>
@@ -6386,7 +6385,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001624 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which cells (microorganisms, plant or animal cells) are cultured in a bioreactor in a liquid or solid medium to convert organic substances into biomass (growth) or into products.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001624</oboInOwl:id>
@@ -6398,7 +6397,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001625 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001625">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of dividing up a sample mixture into smaller quantities according to their physical (e.g. size, solubility) or chemical (e.g. bonding, reactivity) properties.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001625</oboInOwl:id>
@@ -6515,7 +6514,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001652 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001652">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mechanical reduction of the particle size of a solid sample by attribution (friction), impact or cutting.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dry grinding</oboInOwl:hasExactSynonym>
@@ -6597,7 +6596,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001685 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001685">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The combining of components, particles or layers into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process μst not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001685</oboInOwl:id>
@@ -6609,7 +6608,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001686 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001686">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growth of larger crystals from those of smaller size, which have a higher solubility than the larger ones.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ostwald-ripening</oboInOwl:hasExactSynonym>
@@ -6683,7 +6682,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0001904 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any material processing method that uses a supercritical fluid.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
@@ -6913,7 +6912,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The removal of ions from a solution using an ion-exchange method.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
@@ -7300,7 +7299,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002770 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002770">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sample preparation step involving the increase in temperature of a sample.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002770</oboInOwl:id>
@@ -7313,7 +7312,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002771 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002771">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A preparative step where the concentration of one component is increased.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002771</oboInOwl:id>
@@ -7325,7 +7324,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002772 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002772">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A preparative step involving the removal of dissolved gases from a sample.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Degasification</oboInOwl:hasDbXref>
@@ -7375,7 +7374,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002852 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002852">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing step that involves taking a test material with an adequately low background level of the intended analyte and mixing it with a known amount of analyte.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002852</oboInOwl:id>
@@ -7399,7 +7398,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002916 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002916">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material processing in which a liquid or gas transitions into a solid.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002916</oboInOwl:id>
@@ -7411,7 +7410,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/CHMO_0002917 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002917">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material processing in which a sample is cooled by immersion in a fluid.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0002917</oboInOwl:id>
@@ -7423,6 +7422,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/FIX_0000277 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FIX_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/fix.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fix.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000277</oboInOwl:id>
@@ -8203,17 +8203,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000111 xml:lang="en">processed material</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples</obo:IAO_0000112>
@@ -8336,7 +8325,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000086">
         <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/role#AFRL_0000249"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Buffer, dye, a catalyst, a solvating agent.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -8352,58 +8340,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent</skos:altLabel>
         <skos:definition>A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer. [OBI]</skos:definition>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent role</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material processing</obo:IAO_0000111>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process which results in physical changes in a specified input material.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Philippe Rocca Serra</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001131</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001267</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHMO:0001461</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000258</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material transformations</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preparative method</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample preparation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample preparation step</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample preparative method</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0000094</oboInOwl:id>
-        <rdfs:label xml:lang="en">material processing</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material processing</rdfs:label>
     </owl:Class>
     
 
@@ -8681,12 +8617,6 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
             </owl:Restriction>
@@ -8813,7 +8743,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OBI_0600014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing in which components of an input material become segregated in space.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0600014</oboInOwl:id>
@@ -8825,7 +8755,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OBI_0600058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600058">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -8879,7 +8809,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -8908,8 +8838,9 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000008"/>
-        <rdfs:label xml:lang="en">full factorial design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>an experimental design to limit the number of experiments covering the space by assuming the Interactions between the factors are negligible</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Plackett–Burman design</rdfs:label>
     </owl:Class>
     
 
@@ -8969,7 +8900,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
         <rdfs:label xml:lang="en">factorial design</rdfs:label>
     </owl:Class>
     
@@ -9096,19 +9027,10 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPC_0000021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:label xml:lang="en">role of chemical entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPC_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">starting material role in synthesis</rdfs:label>
     </owl:Class>
     
@@ -9117,7 +9039,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">intermediate material role in synthesis</rdfs:label>
     </owl:Class>
     
@@ -9244,7 +9166,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -9303,7 +9225,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">chemical product role</rdfs:label>
     </owl:Class>
     
@@ -9312,7 +9234,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <rdfs:label xml:lang="en">chemical impurity role</rdfs:label>
     </owl:Class>
     
@@ -9321,7 +9243,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000001"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">GLP synthetic process</rdfs:label>
     </owl:Class>
@@ -9402,7 +9324,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <rdfs:label xml:lang="en">AFO_303281: quality process profile</rdfs:label>
+        <rdfs:label xml:lang="en">quality process profile</rdfs:label>
     </owl:Class>
     
 
@@ -9608,7 +9530,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:comment>the role of a solvent in a precipitation or crystallization in which the solute of a solution is sparingly soluble to induce its solidification.</rdfs:comment>
@@ -9629,7 +9551,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>The role of a crystalline solid material input in a crystallization to promote nuleation or crystal growth.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:comment>A seed crystal is a small piece of single crystal or polycrystal material from which a large crystal of typically the same material is to be grown in a laboratory. Used to replicate material, the use of seed crystal to promote growth avoids the otherwise slow randomness of natural crystal growth and allows manufacture on a scale suitable for industry [wikipedia].</rdfs:comment>
@@ -9641,7 +9563,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>the role of solids in a slurry</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">precipitate role</rdfs:label>
@@ -9696,7 +9618,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>a debris role of the solution in a slurry resulting from a crystallization</obo:IAO_0000115>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mother liquor role</rdfs:label>
@@ -9915,10 +9837,10 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <obo:IAO_0000115>A planned process that is composed of subprocesses ....</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">process chemistry workflow</rdfs:label>
+        <rdfs:label xml:lang="en">process chemistry workflow plan</rdfs:label>
     </owl:Class>
     
 
@@ -11024,6 +10946,192 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPC_0000265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH guideline about  identifying, qualifying and specifying impurities in drug substance.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>ICH Q3A Impurities in New Drug Substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>an ICH guideline for the use residual solvents (organic volatile impurities) 
+in the manufacture of drug substances and dosage forms, and sets pharmaceutical limits for  in drug products.</obo:IAO_0000115>
+        <rdfs:label>ICH Q3C Residual Solvents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <obo:IAO_0000115>a quality guideline for the control of elemental impurities in new drug products (medicinal products), establishing Permitted Daily Exposures (PDEs) for 24 Elemental Impurities (EIs) for drug products administered by the oral, parenteral and inhalation routes of administration.</obo:IAO_0000115>
+        <rdfs:label>ICH Q3D Guidance for Elemental Impurities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH guidance on the setting and justification of acceptance criteria and the selection of test procedures for new drug substances of synthetic chemical origin, and new drug products produced from them, which have not been registered previously in the ICH regions.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>ICH Q6A Specifications: Test Procedures and Acceptance Criteria for Chemical Substances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000136"/>
+        <obo:IAO_0000115>An ICH Guideline for the manufacture of APIs for use in human drug (medicinal) products.</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>Q7 Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000270">
+        <rdfs:subClassOf rdf:resource="http://purl.allotrope.org/ontologies/role#AFRL_0000364"/>
+        <obo:IAO_0000115>Residual solvents in pharmaceuticals are defined here as organic volatile chemicals that are used or produced in the manufacture of drug substances or excipients, or in the preparation of drug products. The solvents are not completely removed by practical manufacturing techniques.</obo:IAO_0000115>
+        <obo:IAO_0000119>[FDA]</obo:IAO_0000119>
+        <rdfs:label>residual solvent impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000270"/>
+        <obo:IAO_0000115>Class 1 solvents: Solvents to be avoided
+Known human carcinogens, strongly suspected human carcinogens, and environmental
+hazards.</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label>ICH Q6A Class 1 Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000270"/>
+        <obo:IAO_0000115>Class 2 solvents: Solvents to be limited
+Non-genotoxic animal carcinogens or possible causative agents of other irreversible
+toxicity such as neurotoxicity or teratogenicity.
+Solvents suspected of other significant but reversible toxicities</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label>ICH Q6A Class 2 Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000270"/>
+        <obo:IAO_0000115>Class 3 solvents: Solvents with low toxic potential
+Solvents with low toxic potential to man; no health-based exposure limit is needed. Class
+3 solvents have PDEs of 50 mg or more per day.</obo:IAO_0000115>
+        <obo:IAO_0000115>[ICH]</obo:IAO_0000115>
+        <rdfs:label>ICH Q6A Class 3 Solvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000115>Permitted Daily Exposure:
+The maximum acceptable intake per day of residual solvent in pharmaceutical products</obo:IAO_0000115>
+        <obo:IAO_0000119>[ICH]</obo:IAO_0000119>
+        <rdfs:label>Permitted Daily Exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>an experimental design involving the testing of factors, or causes, one at a time instead of multiple factors simultaneously.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>one-factor-at-a-time experimental design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>The design of an experiment intended to test a hypothesis, and describe or explain empirical data obtained under various experimental conditions.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://edamontology.org/topic_3678</obo:IAO_0000119>
+        <rdfs:label>experimental design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process during which a material entity undergoes a rapid increase in volume, releasing gasses and various forms of energy, often including thermal, light and sound energy.</obo:IAO_0000115>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>explosion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>developing an understanding of the hazards of a chemical process and developing methods to safely manage and minimize the risks of the process.</obo:IAO_0000115>
+        <rdfs:label>process safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>an experimental design to produce a response curve sufficient to fit quadratic models of the individual factors</obo:IAO_0000115>
+        <obo:IAO_0000119>George Box, Donald Behnken, &quot;Some new three level designs for the study of quantitative variables&quot;, Technometrics, Volume 2, pages 455–475, 1960</obo:IAO_0000119>
+        <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
+        <rdfs:label>Box–Behnken design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000276"/>
+        <obo:IAO_0000115>a experimental design consisting of three distinct sets of experimental runs: 
+A factorial (perhaps fractional) design in the factors studied, each having two levels;
+A set of center points, experimental runs whose values of each factor are the medians of the values used in the factorial portion. This point is often replicated in order to improve the precision of the experiment;
+A set of axial points, experimental runs identical to the centre points except for one factor, which will take on values both below and above the median of the two factorial levels, and typically both outside their range. All factors are varied in this way.</obo:IAO_0000115>
+        <rdfs:label>Central Composite Design</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
@@ -11085,7 +11193,7 @@ Definition: A quality of a single process inhering in a bearer by virtue of the 
     <!-- http://purl.obolibrary.org/obo/REX_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/REX_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000051"/>
         <obo:IAO_0000115>A process involving the interconversion of chemical species.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>rex.obo</oboInOwl:hasOBONamespace>
         <oboInOwl:id>REX:0000002</oboInOwl:id>
@@ -14598,6 +14706,7 @@ radiation.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000107 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <obo:IAO_0000115>The equilibrium state is characterized by a constant, designated K, which provides quantitative information of the extent of a reaction and is related to the ratio of the concentrations of reactants and products</obo:IAO_0000115>
         <rdfs:label>equilibrium</rdfs:label>
     </owl:Class>
@@ -14792,13 +14901,6 @@ equivalent to ENM:9000035
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000138"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000139"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119>a crystalline phase is a single solid crystalline thermodynamic phase</obo:IAO_0000119>
         <rdfs:label xml:lang="en">crystalline solid thermodynamic phase</rdfs:label>
     </owl:Class>
@@ -15486,7 +15588,7 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/opc.owl#OPC_0000200 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/opc.owl#OPC_0000200">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
         <obo:IAO_0000115>a synthesis role used to remove suspended solids from liquids by inducing flocculation (the solids begin to aggregate forming flakes, which either precipitate to the bottom or float to the surface of the liquid, and then they can be removed or collected).  Flocculants, or flocculating agents (also known as flocking agents), are chemicals that promote flocculation by causing colloids and other suspended particles in liquids to aggregate, forming a floc.</obo:IAO_0000115>
         <obo:IAO_0000118>clarifying agent</obo:IAO_0000118>
         <obo:IAO_0000119>[Wikipedia]</obo:IAO_0000119>
@@ -16080,6 +16182,102 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
     
 
 
@@ -16098,44 +16296,44 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>Pierre Grenon</dc:contributor>
         <dc:contributor>David Osumi-Sutherland</dc:contributor>
+        <dc:contributor>Pierre Grenon</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor>Melanie Courtot</dc:contributor>
         <dc:contributor>Bjoern Peters</dc:contributor>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
         <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
+        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Randall Dipert</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Larry Hunter</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: BFO does not claim to provide complete coverage of entities of all types. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning - coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation.</obo:IAO_0000116>
         <dc:contributor>Ron Rudnicki</dc:contributor>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: BFO does not claim to provide complete coverage of entities of all types. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning - coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation.</obo:IAO_0000116>
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
-        <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Bill Duncan</dc:contributor>
+        <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
@@ -16162,8 +16360,8 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/ontology/sio.owl">
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-12</terms:modified>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-core.owl"/>
         <dc:identifier>sio.owl</dc:identifier>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-core.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-emotion.owl"/>
         <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</terms:rights>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.36.0</owl:versionInfo>
@@ -16179,16 +16377,16 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-nlp.owl"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://sio.semanticscience.org</rdfs:seeAlso>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-labels.owl"/>
-        <schema:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general class inclusion axioms: &apos;is part of&apos; some &apos;physical entity&apos; subClassOf &apos;is located in&apos; some &apos;physical entity&apos; role chains: &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://orcid.org/0000-0003-4727-9435</terms:creator>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-capability.owl"/>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-math.owl"/>
+        <schema:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general class inclusion axioms: &apos;is part of&apos; some &apos;physical entity&apos; subClassOf &apos;is located in&apos; some &apos;physical entity&apos; role chains: &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-geometry.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-math.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://semanticscience.org/resource/</vann:preferredNamespaceUri>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-process.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-equivs.owl"/>
         <terms:description xml:lang="en">The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes. This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects. website: http://semanticscience.org email: sio-ontology@googlegroups.com mailing list: http://groups.google.com/group/sio-ontology </terms:description>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-equivs.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-relations.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-behaviour.owl"/>
     </rdf:Description>
