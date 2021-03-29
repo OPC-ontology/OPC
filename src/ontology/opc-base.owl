@@ -9253,7 +9253,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000042 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000056"/>
         <obo:IAO_0000115>A plan specification that specifies the action and objective of a synthetic process, as defined in CFR - Code of Federal Regulations Title 21.</obo:IAO_0000115>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=210.1</obo:IAO_0000119>
@@ -9466,6 +9466,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
         <obo:IAO_0000117>a sequenced set of unit operations for a single synthetic reaction or simultaneous reactions that are executed in a single equipment train.</obo:IAO_0000117>
+        <rdfs:comment>https://www.chemistryworld.com/opinion/what-counts-as-a-step-during-chemical-synthesis/2500261.article#/</rdfs:comment>
         <rdfs:label xml:lang="en">synthetic step specification</rdfs:label>
     </owl:Class>
     
@@ -9731,7 +9732,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">reaction screening</rdfs:label>
+        <rdfs:label xml:lang="en">reaction screening design</rdfs:label>
     </owl:Class>
     
 
@@ -9799,7 +9800,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
         <obo:IAO_0000117>Wes, Oliver</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">polymorph and solvate screening</rdfs:label>
+        <rdfs:label xml:lang="en">polymorph and solvate screening design</rdfs:label>
     </owl:Class>
     
 
@@ -9827,7 +9828,7 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
     <!-- http://purl.obolibrary.org/obo/OPC_0000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000117>Wes Schafer, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">batch campaign</rdfs:label>
     </owl:Class>
@@ -11128,6 +11129,88 @@ A factorial (perhaps fractional) design in the factors studied, each having two 
 A set of center points, experimental runs whose values of each factor are the medians of the values used in the factorial portion. This point is often replicated in order to improve the precision of the experiment;
 A set of axial points, experimental runs identical to the centre points except for one factor, which will take on values both below and above the median of the two factorial levels, and typically both outside their range. All factors are varied in this way.</obo:IAO_0000115>
         <rdfs:label>Central Composite Design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/opc.owl#OPC_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>laboratory notebook experiment identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115>a document that contemporaneously records when, how, by whom each step to produce a specific batch is executed as well as the specific equipment and the specific materials icluding exact weights and lot numbers.</obo:IAO_0000115>
+        <obo:IAO_0000117>Wes Schafer</obo:IAO_0000117>
+        <obo:IAO_0000118>batch sheet</obo:IAO_0000118>
+        <rdfs:label>batch manufacturing record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000093"/>
+        <obo:IAO_0000118>master manufacuring formula</obo:IAO_0000118>
+        <obo:IAO_0000118>master production record</obo:IAO_0000118>
+        <obo:IAO_0000119>FDA 21CFR226</obo:IAO_0000119>
+        <obo:IAO_0000119>is a plan specification of manufacturing instructions for a specific (unique) batch and includes:  
+specific instructions for each step
+the equipment used in each step
+sampling and testing procedures for each step
+the ampount of each component needed to manufacture the batch (Bill of Materials).
+and the theoretical yield and expected yield of each intermediate as well as the product.
+.</obo:IAO_0000119>
+        <rdfs:label>master formula record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115>a document that lists the raw materials, sub-assemblies, intermediate assemblies, sub-components, parts, and the quantities of each needed to manufacture an end product.</obo:IAO_0000115>
+        <obo:IAO_0000118>BOM</obo:IAO_0000118>
+        <obo:IAO_0000118>associated list</obo:IAO_0000118>
+        <obo:IAO_0000118>bill of material</obo:IAO_0000118>
+        <obo:IAO_0000119>wikipedia</obo:IAO_0000119>
+        <rdfs:label>bill of materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OPC_0000091"/>
+        <rdfs:label>solubility screening design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPC_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OPC_0000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000117>Wes Schafer</obo:IAO_0000117>
+        <rdfs:label>competency question</rdfs:label>
+        <skos:definition>is an objective specification for an ontolgy in the form of a user-focused question / query that identifies key concepts and their relationships that are normally formalized in first order logic of the ontology.  They are also used to test the ontology by querying known instance data or by entailment on its axioms.</skos:definition>
     </owl:Class>
     
 
@@ -16135,13 +16218,43 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-16</owl:versionInfo>
     </owl:NamedIndividual>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -16165,34 +16278,7 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -16217,9 +16303,6 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -16242,27 +16325,27 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
-        <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Leonard Jacuzzo</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
         <foaf:homepage rdf:resource="http://basic-formal-ontology.org/"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Werner Ceusters</dc:contributor>
         <dc:contributor>Selja Seppälä</dc:contributor>
+        <dc:contributor>Werner Ceusters</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel, the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx. This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif.</rdfs:comment>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <dc:contributor>Melanie Courtot</dc:contributor>
         <dc:contributor>Bjoern Peters</dc:contributor>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
+        <dc:contributor>Melanie Courtot</dc:contributor>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
@@ -16272,8 +16355,8 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
         <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Randall Dipert</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <dc:contributor>Larry Hunter</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO&apos;s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the &apos;SNAP&apos; and &apos;SPAN&apos; perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science.</obo:IAO_0000116>
@@ -16285,8 +16368,8 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. &apos;Entity&apos; is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
         <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Ludger Jansen</dc:contributor>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Ludger Jansen</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chebi.owl">
@@ -16294,13 +16377,13 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author: ChEBI curation team</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner and Pankaj Jaiswal.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:02:2021 18:46</oboInOwl:date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 197</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chmo.owl">
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/fix.owl">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saved-by: kirill</rdfs:comment>
@@ -16312,9 +16395,9 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/ontology/sio.owl">
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-12</terms:modified>
-        <dc:identifier>sio.owl</dc:identifier>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-core.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-emotion.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-core.owl"/>
+        <dc:identifier>sio.owl</dc:identifier>
         <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</terms:rights>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.36.0</owl:versionInfo>
         <cito:citesAsAuthority rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.jbiomedsem.com/content/5/1/14</cito:citesAsAuthority>
@@ -16327,20 +16410,20 @@ dispersion of one or more components in a solid matrix</obo:IAO_0000115>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-ovopub.owl"/>
         <vann:preferredNamespacePrefix xml:lang="en">sio</vann:preferredNamespacePrefix>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-nlp.owl"/>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://sio.semanticscience.org</rdfs:seeAlso>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-labels.owl"/>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://orcid.org/0000-0003-4727-9435</terms:creator>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://sio.semanticscience.org</rdfs:seeAlso>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-capability.owl"/>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://orcid.org/0000-0003-4727-9435</terms:creator>
         <schema:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general class inclusion axioms: &apos;is part of&apos; some &apos;physical entity&apos; subClassOf &apos;is located in&apos; some &apos;physical entity&apos; role chains: &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-geometry.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-math.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://semanticscience.org/resource/</vann:preferredNamespaceUri>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-geometry.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-process.owl"/>
-        <terms:description xml:lang="en">The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes. This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects. website: http://semanticscience.org email: sio-ontology@googlegroups.com mailing list: http://groups.google.com/group/sio-ontology </terms:description>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://semanticscience.org/resource/</vann:preferredNamespaceUri>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-equivs.owl"/>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-relations.owl"/>
+        <terms:description xml:lang="en">The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes. This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects. website: http://semanticscience.org email: sio-ontology@googlegroups.com mailing list: http://groups.google.com/group/sio-ontology </terms:description>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-behaviour.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-relations.owl"/>
     </rdf:Description>
 </rdf:RDF>
 
