@@ -165,6 +165,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
     
+<!--  http://purl.obolibrary.org/obo/CHEBI_24431  -->
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</rdfs:label>
+	<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</obo:IAO_0000115>
+	<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:24431</oboInOwl:id>
+	<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+	<oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</oboInOwl:hasExactSynonym>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+</owl:Class>
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_13193 -->
@@ -1774,9 +1784,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corrosion inhibitor</rdfs:label>
     </owl:Class>
-    
-
-
+	
+	
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
