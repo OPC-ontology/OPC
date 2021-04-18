@@ -28,94 +28,12 @@
      xmlns:PATO_imports="http://purl.obolibrary.org/obo/opc/PATO_imports.owl.#"
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/opc.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/AFO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHEMINF_imports.owl."/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/CHMO2.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/PATO_imports.owl."/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/CHEBI3_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/CHEBI_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/FIX_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/OBI_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/REX_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/SBO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opc/imports/SIO__studies_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro-base.owl"/>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <obo:IAO_0000116>BFO 2 Reference: BFO does not claim to be a complete coverage of all entities. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning – coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation [17</obo:IAO_0000116>
-        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents – as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality – earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science [30</obo:IAO_0000116>
-        <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of one such primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
-        <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
-        <dc:contributor>Alan Ruttenberg</dc:contributor>
-        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
-        <dc:contributor>Albert Goldfain</dc:contributor>
-        <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
-        <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Bjoern Peters</dc:contributor>
-        <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
-        <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
-        <dc:contributor>Chris Mungall</dc:contributor>
-        <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
-        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
-        <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
-        <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
-        <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
-        <dc:contributor>Fabian Neuhaus</dc:contributor>
-        <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
-        <dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
-        <dc:contributor>James A. Overton</dc:contributor>
-        <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
-        <dc:contributor xml:lang="en">James Malone</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
-        <dc:contributor>Jie Zheng</dc:contributor>
-        <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
-        <dc:contributor>Jonathan Bona</dc:contributor>
-        <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
-        <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
-        <dc:contributor>Larry Hunter</dc:contributor>
-        <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
-        <dc:contributor>Leonard Jacuzzo</dc:contributor>
-        <dc:contributor>Ludger Jansen</dc:contributor>
-        <dc:contributor>Mark Ressler</dc:contributor>
-        <dc:contributor>Mathias Brochhausen</dc:contributor>
-        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
-        <dc:contributor>Mauricio Almeida</dc:contributor>
-        <dc:contributor>Melanie Courtot</dc:contributor>
-        <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
-        <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
-        <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
-        <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
-        <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
-        <dc:contributor>Pierre Grenon</dc:contributor>
-        <dc:contributor>Randall Dipert</dc:contributor>
-        <dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
-        <dc:contributor>Robert Rovetto</dc:contributor>
-        <dc:contributor>Ron Rudnicki</dc:contributor>
-        <dc:contributor xml:lang="en">Ron Rudnicki</dc:contributor>
-        <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
-        <dc:contributor xml:lang="en">Sivaram Arabandi</dc:contributor>
-        <dc:contributor>Stefan Schulz</dc:contributor>
-        <dc:contributor>Thomas Bittner</dc:contributor>
-        <dc:contributor>Werner Ceusters</dc:contributor>
-        <dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
-        <dc:contributor xml:lang="en">William Duncan</dc:contributor>
-        <dc:contributor xml:lang="en">William Hogan</dc:contributor>
-        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
-        <dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
         <dc:creator xml:lang="en">Anna Dunn</dc:creator>
         <dc:creator xml:lang="en">Wes A. Schafer</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator xml:lang="en">Zachary Dance</dc:creator>
         <dc:description xml:lang="en">OPC is a formal ontology that aims to standardly represent entities and relations among entities in the domain of process chemistry.</dc:description>
-        <dc:description>The Information Artifact Ontology (IAO) is an ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.</dc:description>
-        <dc:description xml:lang="en">The OBO Relations Ontology (RO) is a collection of OWL relations (ObjectProperties) intended for use across a wide variety of biological ontologies.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:subject xml:lang="en">OPC: a formal ontology in the domain of process chemistry.</dc:subject>
@@ -123,41 +41,10 @@
         <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
         <dc:title xml:lang="en">OPC: Ontology of Process Chemistry</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <oboInOwl:creation_date>2-27-2021</oboInOwl:creation_date>
-        <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/bfo-axioms.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 18 Logical Axioms: 7]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/bfo-classes-minimal.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 56 Logical Axioms: 13]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/chemical.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 9 Logical Axioms: 3]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/core.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 291 Logical Axioms: 62]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/el-constraints.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 6 Logical Axioms: 2]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/generated-axioms.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 18 Logical Axioms: 9]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/rohom.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 731 Logical Axioms: 148]</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/ro/temporal-intervals.owl&gt;) VersionIRI(&lt;null&gt;))) [Axioms: 146 Logical Axioms: 45]</rdfs:comment>
-        <rdfs:comment xml:lang="en">The http://purl.obolibary.org/obo/bfo/classes-only.owl variant of BFO (&quot;bfo_classes_only.owl&quot;) includes only the class hierarchy and annotations from the full OWL version of BFO 2: http://purl.obolibary.org/obo/bfo.owl (&quot;bfo.owl&quot;). There are no object properties or logical axioms that use the object properties in bfo_classes_only.owl. As the logical axioms in the bfo_classes_only.owl variant are limited to subclass and disjoint assertions they are much weaker than the logical axioms in bfo.owl.
- 
-If you plan to use the relations that define BFO 2, you should import bfo.owl instead of bfo_classes_only.owl. To the extent that the relations are used without importing bfo.owl, be mindful that they should be used in a manner consistent with their use in bfo.owl. Otherwise if your ontology is imported by a another ontology that imports bfo.owl there may be inconsistencies. 
- 
-See the BFO 2 release notes for further information about BFO 2. Please note that the current release of bfo.owl uses temporal relations when the subject or object is a continuant, a major change from BFO 1.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is an early version of BFO version 2 and has not yet been extensively reviewed by the project team members. Please see the project site http://code.google.com/p/bfo/ , the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel , the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx . This ontology is generated from a specification at http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/ and with the code that generates the OWL version in http://bfo.googlecode.com/svn/trunk/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-07-20/Reference"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/ReleaseNotes"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
-        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
-        <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-09</owl:versionInfo>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.73</owl:versionInfo>
-        <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
-        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"> https://github.com/oborel/obo-relations/</foaf:homepage>
-        <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
+        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OPC-ontology/OPC</foaf:homepage>
     </owl:Ontology>
     
 
@@ -176,6 +63,12 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
     <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
 
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    
+
+
+    <!-- http://purl.allotrope.org/ontologies/property#AFX_0002798 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.allotrope.org/ontologies/property#AFX_0002798"/>
     
 
 
@@ -1315,6 +1208,12 @@ Where we have an annotation assertion
     
 
 
+    <!-- http://purl.obolibrary.org/obo/opc/PATO_imports.owl.#disjointWith -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/opc/PATO_imports.owl.#disjointWith"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
@@ -1399,6 +1298,12 @@ Where we have an annotation assertion
     <!-- http://purl.org/dc/elements/1.1/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
     
 
 
@@ -12914,8 +12819,8 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">entity</rdfs:label>
         <rdfs:label>entity</rdfs:label>
+        <rdfs:label xml:lang="en">entity</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
@@ -12986,8 +12891,8 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonyms: endurant</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:label>continuant</rdfs:label>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
@@ -13634,8 +13539,8 @@ NB. The symbol Vmax and the names maximum rate and maximum velocity are in wides
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples: the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">quality</rdfs:label>
         <rdfs:label>quality</rdfs:label>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
@@ -36739,67 +36644,67 @@ radiation.</obo:IAO_0000115>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-16</owl:versionInfo>
     </owl:NamedIndividual>
     <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </rdf:Description>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://github.com/oborel/obo-relations/issues/259"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     
 
@@ -36837,13 +36742,13 @@ radiation.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/gaz.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chebi.owl">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For any queries contact chebi-help@ebi.ac.uk</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author: ChEBI curation team</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner and Pankaj Jaiswal.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developed by Michael Ashburner  Pankaj Jaiswal.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:02:2021 18:46</oboInOwl:date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI subsumes and replaces the Chemical Ontology first</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI Release version 197</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/chmo.owl">
@@ -36855,14 +36760,14 @@ radiation.</obo:IAO_0000115>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</oboInOwl:hasOBOFormatVersion>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autogenerated-by: DAG-Edit version 1.419 rev 3</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version: $Revision: 1.2 $</rdfs:comment>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25:05:2005 12:37</oboInOwl:date>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date: Mon Apr 04 14:05:41 BST 2005</rdfs:comment>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25:05:2005 12:37</oboInOwl:date>
     </rdf:Description>
     <rdf:Description rdf:about="http://semanticscience.org/ontology/sio.owl">
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-12</terms:modified>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-core.owl"/>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-emotion.owl"/>
         <dc:identifier>sio.owl</dc:identifier>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-emotion.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-core.owl"/>
         <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].</terms:rights>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.36.0</owl:versionInfo>
         <cito:citesAsAuthority rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.jbiomedsem.com/content/5/1/14</cito:citesAsAuthority>
@@ -36880,15 +36785,15 @@ radiation.</obo:IAO_0000115>
         <schema:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general class inclusion axioms: &apos;is part of&apos; some &apos;physical entity&apos; subClassOf &apos;is located in&apos; some &apos;physical entity&apos; role chains: &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</schema:comment>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-capability.owl"/>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://orcid.org/0000-0003-4727-9435</terms:creator>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-geometry.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-math.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-geometry.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-process.owl"/>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://semanticscience.org/resource/</vann:preferredNamespaceUri>
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-process.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-equivs.owl"/>
         <terms:description xml:lang="en">The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes. This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects. website: http://semanticscience.org email: sio-ontology@googlegroups.com mailing list: http://groups.google.com/group/sio-ontology </terms:description>
-        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-relations.owl"/>
         <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-behaviour.owl"/>
+        <void:subset rdf:resource="http://semanticscience.org/ontology/sio-subset-relations.owl"/>
     </rdf:Description>
     
 
