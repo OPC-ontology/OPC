@@ -12,6 +12,7 @@ Oliver He, Wes Schafer. [Extending the Allotrope Framework: An Ontological Repre
 
 ## OPC Sources
 OPC OWL source: [opc.owl](https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl?token=ABD22Q5IUI2T6A2KA2XTOQK7LPFXK) 
+
 webprotege access (account needed): [OPC-webprotege](https://webprotege.stanford.edu/#projects/70017d4f-15ce-4f15-ab1f-0a8bf14dc074/edit/Classes?selection=Class(%3Chttp://purl.obolibrary.org/obo/OPC_0000079%3E))
 
 ## License of OPC Sources
