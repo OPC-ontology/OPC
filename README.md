@@ -11,7 +11,9 @@ The OPC development has also got support and collaboration with the [Allotrope F
 Oliver He, Wes Schafer. [Extending the Allotrope Framework: An Ontological Representation and Analysis of Process Chemistry](https://a931b97a-f419-4166-9ec6-4bd98cdfcfa7.filesusr.com/ugd/b6aabf_e139357058f84b5b9b80dedf6111f50b.pdf) (Oral presentation). [2020 Fall Allotrope Connect](https://www.allotrope.org/2020-fall-allotrope-connect) Virtual Conference, Sept. 30th, 2020. 
 
 ## OPC Sources
-OPC OWL source: https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl?token=ABD22Q5IUI2T6A2KA2XTOQK7LPFXK 
+OPC OWL source: [opc.owl](https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl?token=ABD22Q5IUI2T6A2KA2XTOQK7LPFXK) 
+
+webprotege access (account needed): [OPC-webprotege](https://webprotege.stanford.edu/#projects/70017d4f-15ce-4f15-ab1f-0a8bf14dc074/edit/Classes?selection=Class(%3Chttp://purl.obolibrary.org/obo/OPC_0000079%3E))
 
 ## License of OPC Sources
 CC BY-4: https://creativecommons.org/licenses/by/4.0/ 
