@@ -4,9 +4,15 @@ http://purl.obolibrary.org/obo/CHEBI_24431 made a subClassOf http://purl.obolibr
 
 http://purl.obolibrary.org/obo/REX_0000002 made a subClassOf http://purl.obolibrary.org/obo/OBI_0000011 "planned process"
 
+http://purl.obolibrary.org/obo/CHMO_0001624 "fermentation" subClassOf http://purl.obolibrary.org/obo/OBI_0000011 "planned process"
+
 http://purl.allotrope.org/ontologies/equipment#AFE_0000354 "device" made a cubClassOf http://purl.obolibrary.org/obo/BFO_0000040 "material entity"
 
 http://purl.obolibrary.org/obo/CHEBI_36342 "subatomic particle" made a subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+
+http://purl.obolibrary.org/obo/CHMO_0002224 "crystal growth method" made a subClassOf http://purl.obolibrary.org/obo/CHMO_0002224
+
+http://purl.obolibrary.org/obo/RO_0002532 "sequentially ordered entity" made a subClassOf http://purl.obolibrary.org/obo/IAO_0000030
 
 http://purl.obolibrary.org/obo/FIX_0000285 "redox potential change"
 http://purl.obolibrary.org/obo/FIX_0000279 "Gibbs free energy change"
@@ -26,6 +32,7 @@ http://purl.obolibrary.org/obo/CHMO_0002157 "deionisation method"
 http://purl.obolibrary.org/obo/CHMO_0001532 "distillation" 
 http://purl.obolibrary.org/obo/CHMO_0001574 "evaporation"
 http://purl.obolibrary.org/obo/CHMO_0001577 "extraction"
+
 http://purl.obolibrary.org/obo/CHMO_0001625 "fractionation"
 http://purl.obolibrary.org/obo/CHMO_0001652 "grinding"
 http://purl.obolibrary.org/obo/CHMO_0001685 "mixing"

@@ -79,6 +79,10 @@
 # #################################################################
 # 
 # 
+# http://purl.allotrope.org/ontologies/property#AFX_0002798
+
+af-x:AFX_0002798 a owl:AnnotationProperty .
+# 
 # http://purl.allotrope.org/ontologies/property#AFX_0002808
 
 af-x:AFX_0002808 a owl:AnnotationProperty .
@@ -143,28 +147,19 @@ skos:prefLabel a owl:AnnotationProperty .
 # http://purl.allotrope.org/ontologies/property#AFX_0001048
 
 af-x:AFX_0001048 a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0001015> .
-
-<http://purl.obolibrary.org/obo/RO_0001015> a owl:ObjectProperty .
-
-af-x:AFX_0001048 owl:inverseOf af-x:AFX_0001049 ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0001015> ;
+	owl:inverseOf af-x:AFX_0001049 ;
 	rdfs:domain af-e:AFE_0000407 ;
-	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> .
-
-<http://purl.obolibrary.org/obo/BFO_0000040> a owl:Class .
-
-af-x:AFX_0001048 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;
+	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;
 	skos:definition "The relation between a container and its physical content. A material entity a contains a material entity b if b is located in some cavity of a. [Allotrope]" ;
 	skos:prefLabel "contains" .
 # 
 # http://purl.allotrope.org/ontologies/property#AFX_0001049
 
 af-x:AFX_0001049 a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0001025> .
-
-<http://purl.obolibrary.org/obo/RO_0001025> a owl:ObjectProperty .
-
-af-x:AFX_0001049 rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0001025> ;
+	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
 	rdfs:range af-e:AFE_0000407 ;
 	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;
 	skos:definition "Inverse of contains. [Allotrope]" ;
@@ -174,26 +169,57 @@ af-x:AFX_0001049 rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
 
 af-x:AFX_0002722 a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002502> ;
-	owl:inverseOf af-x:AFX_0002723 ;
 	a owl:TransitiveProperty ;
 	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/relation> ;
 	skos:altLabel "influenced by" ;
 	skos:definition "Inverse of quality influences. [Allotrope]" ;
 	skos:prefLabel "quality influenced by" .
-# 
-# http://purl.allotrope.org/ontologies/property#AFX_0002723
+#
+# http://purl.allotrope.org/ontologies/property#AFX_0002793
+af-x:AFX_0002793 rdf:type owl:ObjectProperty ;                
+                 rdfs:subPropertyOf bfo:_0000051 ;                 
+                 owl:inverseOf af-x:AFX_0002846 ;                
+                 rdf:type owl:TransitiveProperty ;                
+                 af-x:AFX_0002809 <http://semanticscience.org/resource/SIO_000053> ;                 
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;                
+                 skos:definition "Has proper part is an antisymmetric, irreflexive (normally transitive) relation between a whole and a distinct part. [SIO]" ;               
+                 skos:example "An atom has subatomic particles as its proper parts." ;               
+                 skos:prefLabel "has proper part" .
+#
+#  http://purl.allotrope.org/ontologies/property#AFX_0002800
+af-x:AFX_0002800 rdf:type owl:ObjectProperty ;                
+                 rdfs:subPropertyOf af-x:AFX_0002846 ;               
+                 owl:inverseOf af-x:AFX_0002803 ;               
+                 rdf:type owl:TransitiveProperty ;                
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;                
+                 skos:altLabel "is facet of" ;                
+                 skos:definition "Facet of relates two information content entities where one information content entity is an aspect of the other one. [Allotrope]" ;                
+                 skos:prefLabel "facet of" .
+#
+#  http://purl.allotrope.org/ontologies/property#AFX_0002803
 
-af-x:AFX_0002723 a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002609> ;
-	a owl:TransitiveProperty ;
-	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
-	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000019> ;
-	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12/relation> ;
-	skos:altLabel "influences" ;
-	skos:definition "Holds between qualities a and b  such that if a process changes the quality to some other instance a' then for some a' it is necessary that b changes to another instance b'. [Allotrope]" ;
-	skos:example "volume influences density" ;
-	skos:prefLabel "quality influences" .
-# 
+af-x:AFX_0002803 rdf:type owl:ObjectProperty ;               
+                 rdfs:subPropertyOf af-x:AFX_0002793 ;              
+                 rdf:type owl:TransitiveProperty ;              
+                 rdfs:domain iao:_0000030 ;                
+                 rdfs:range af-r:AFR_0000923 ;               
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;               
+                 skos:definition "Relation between an information content entity and some part of it called a facet that is covers some general aspect of information context. [Allotrope]" ;                
+                 skos:example "a timestamp" ,
+                              "a title" ,
+                              "an ordering" ;               
+                 skos:prefLabel "has facet" .	
+#
+
+#  http://purl.allotrope.org/ontologies/property#AFX_0002846
+
+af-x:AFX_0002846 rdf:type owl:ObjectProperty ;                
+                 rdfs:subPropertyOf bfo:_0000050 ;                
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/relation> ;                
+                 skos:altLabel "is proper part of" ;                
+                 skos:definition "Inverse of has proper part. [Allotrope]" ;                
+                 skos:prefLabel "proper part of" .
+#
 # http://purl.obolibrary.org/obo/BFO_0000054
 
 <http://purl.obolibrary.org/obo/BFO_0000054> a owl:ObjectProperty .
@@ -207,16 +233,24 @@ af-x:AFX_0002723 a owl:ObjectProperty ;
 <http://purl.obolibrary.org/obo/RO_0000085> a owl:ObjectProperty .
 # 
 # http://purl.obolibrary.org/obo/RO_0001015
+
+<http://purl.obolibrary.org/obo/RO_0001015> a owl:ObjectProperty .
 # 
 # http://purl.obolibrary.org/obo/RO_0001025
+
+<http://purl.obolibrary.org/obo/RO_0001025> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0002337
+
+<http://purl.obolibrary.org/obo/RO_0002337> a owl:ObjectProperty .
+# 
+# http://purl.obolibrary.org/obo/RO_0002344
+
+<http://purl.obolibrary.org/obo/RO_0002344> a owl:ObjectProperty .
 # 
 # http://purl.obolibrary.org/obo/RO_0002502
 
 <http://purl.obolibrary.org/obo/RO_0002502> a owl:ObjectProperty .
-# 
-# http://purl.obolibrary.org/obo/RO_0002609
-
-<http://purl.obolibrary.org/obo/RO_0002609> a owl:ObjectProperty .
 # 
 # 
 # 
@@ -289,32 +323,41 @@ af-e:AFE_0001128 af-x:AFX_0002818 "true"^^xsd:boolean ;
 	skos:definition "A device used for heating something. [Allotrope]" ;
 	skos:prefLabel "heating device" .
 # 
+# http://purl.allotrope.org/ontologies/equipment#AFE_0002168
+
+af-e:AFE_0002168 a owl:Class ;
+	rdfs:subClassOf af-e:AFE_0000354 , _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
+	owl:someValuesFrom af-fn:AFFN_0000187 .
+
+af-e:AFE_0002168 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "A transferring device is a device that is designed to transfer material. [Allotrope]" ;
+	skos:prefLabel "transferring device" .
+# 
 # http://purl.allotrope.org/ontologies/function#AFFN_0000014
 
 af-fn:AFFN_0000014 a owl:Class ;
-	owl:equivalentClass _:genid7 .
+	owl:equivalentClass _:genid8 .
 
-_:genid7 owl:intersectionOf _:genid10 .
+_:genid8 owl:intersectionOf _:genid11 .
 
-_:genid10 a rdf:List ;
-	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> .
+_:genid11 a rdf:List ;
+	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> ;
+	rdf:rest _:genid9 .
 
-<http://purl.obolibrary.org/obo/BFO_0000034> a owl:Class .
+_:genid9 a rdf:List ;
+	rdf:first _:genid10 .
 
-_:genid10 rdf:rest _:genid8 .
-
-_:genid8 a rdf:List ;
-	rdf:first _:genid9 .
-
-_:genid9 a owl:Restriction ;
+_:genid10 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
 	owl:someValuesFrom af-p:AFP_0003359 .
 
-af-p:AFP_0003359 a owl:Class .
+_:genid9 rdf:rest rdf:nil .
 
-_:genid8 rdf:rest rdf:nil .
-
-_:genid7 a owl:Class .
+_:genid8 a owl:Class .
 
 af-fn:AFFN_0000014 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
 	af-x:AFX_0002818 "true"^^xsd:boolean ;
@@ -335,26 +378,24 @@ af-fn:AFFN_0000044 a owl:Class ;
 # http://purl.allotrope.org/ontologies/function#AFFN_0000055
 
 af-fn:AFFN_0000055 a owl:Class ;
-	owl:equivalentClass _:genid11 .
+	owl:equivalentClass _:genid12 .
 
-_:genid11 owl:intersectionOf _:genid14 .
+_:genid12 owl:intersectionOf _:genid15 .
 
-_:genid14 a rdf:List ;
+_:genid15 a rdf:List ;
 	rdf:first af-fn:AFFN_0000137 ;
-	rdf:rest _:genid12 .
+	rdf:rest _:genid13 .
 
-_:genid12 a rdf:List ;
-	rdf:first _:genid13 .
+_:genid13 a rdf:List ;
+	rdf:first _:genid14 .
 
-_:genid13 a owl:Restriction ;
+_:genid14 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
 	owl:someValuesFrom af-p:AFP_0003551 .
 
-af-p:AFP_0003551 a owl:Class .
+_:genid13 rdf:rest rdf:nil .
 
-_:genid12 rdf:rest rdf:nil .
-
-_:genid11 a owl:Class .
+_:genid12 a owl:Class .
 
 af-fn:AFFN_0000055 rdfs:subClassOf af-fn:AFFN_0000137 ;
 	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
@@ -366,26 +407,24 @@ af-fn:AFFN_0000055 rdfs:subClassOf af-fn:AFFN_0000137 ;
 # http://purl.allotrope.org/ontologies/function#AFFN_0000111
 
 af-fn:AFFN_0000111 a owl:Class ;
-	owl:equivalentClass _:genid15 .
+	owl:equivalentClass _:genid16 .
 
-_:genid15 owl:intersectionOf _:genid18 .
+_:genid16 owl:intersectionOf _:genid19 .
 
-_:genid18 a rdf:List ;
+_:genid19 a rdf:List ;
 	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> ;
-	rdf:rest _:genid16 .
+	rdf:rest _:genid17 .
 
-_:genid16 a rdf:List ;
-	rdf:first _:genid17 .
+_:genid17 a rdf:List ;
+	rdf:first _:genid18 .
 
-_:genid17 a owl:Restriction ;
+_:genid18 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
 	owl:someValuesFrom af-p:AFP_0003348 .
 
-af-p:AFP_0003348 a owl:Class .
+_:genid17 rdf:rest rdf:nil .
 
-_:genid16 rdf:rest rdf:nil .
-
-_:genid15 a owl:Class .
+_:genid16 a owl:Class .
 
 af-fn:AFFN_0000111 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
 	af-x:AFX_0002818 "true"^^xsd:boolean ;
@@ -397,26 +436,24 @@ af-fn:AFFN_0000111 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> 
 # http://purl.allotrope.org/ontologies/function#AFFN_0000127
 
 af-fn:AFFN_0000127 a owl:Class ;
-	owl:equivalentClass _:genid19 .
+	owl:equivalentClass _:genid20 .
 
-_:genid19 owl:intersectionOf _:genid22 .
+_:genid20 owl:intersectionOf _:genid23 .
 
-_:genid22 a rdf:List ;
+_:genid23 a rdf:List ;
 	rdf:first af-fn:AFFN_0000111 ;
-	rdf:rest _:genid20 .
+	rdf:rest _:genid21 .
 
-_:genid20 a rdf:List ;
-	rdf:first _:genid21 .
+_:genid21 a rdf:List ;
+	rdf:first _:genid22 .
 
-_:genid21 a owl:Restriction ;
+_:genid22 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
 	owl:someValuesFrom af-p:AFP_0003486 .
 
-af-p:AFP_0003486 a owl:Class .
+_:genid21 rdf:rest rdf:nil .
 
-_:genid20 rdf:rest rdf:nil .
-
-_:genid19 a owl:Class .
+_:genid20 a owl:Class .
 
 af-fn:AFFN_0000127 rdfs:subClassOf af-fn:AFFN_0000014 , af-fn:AFFN_0000111 ;
 	af-x:AFX_0002818 "true"^^xsd:boolean ;
@@ -437,26 +474,24 @@ af-fn:AFFN_0000128 a owl:Class ;
 # http://purl.allotrope.org/ontologies/function#AFFN_0000137
 
 af-fn:AFFN_0000137 a owl:Class ;
-	owl:equivalentClass _:genid23 .
+	owl:equivalentClass _:genid24 .
 
-_:genid23 owl:intersectionOf _:genid26 .
+_:genid24 owl:intersectionOf _:genid27 .
 
-_:genid26 a rdf:List ;
+_:genid27 a rdf:List ;
 	rdf:first <http://purl.obolibrary.org/obo/BFO_0000034> ;
-	rdf:rest _:genid24 .
+	rdf:rest _:genid25 .
 
-_:genid24 a rdf:List ;
-	rdf:first _:genid25 .
+_:genid25 a rdf:List ;
+	rdf:first _:genid26 .
 
-_:genid25 a owl:Restriction ;
+_:genid26 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
 	owl:someValuesFrom af-p:AFP_0003563 .
 
-af-p:AFP_0003563 a owl:Class .
+_:genid25 rdf:rest rdf:nil .
 
-_:genid24 rdf:rest rdf:nil .
-
-_:genid23 a owl:Class .
+_:genid24 a owl:Class .
 
 af-fn:AFFN_0000137 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
 	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
@@ -467,26 +502,24 @@ af-fn:AFFN_0000137 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> 
 # http://purl.allotrope.org/ontologies/function#AFFN_0000139
 
 af-fn:AFFN_0000139 a owl:Class ;
-	owl:equivalentClass _:genid27 .
+	owl:equivalentClass _:genid28 .
 
-_:genid27 owl:intersectionOf _:genid30 .
+_:genid28 owl:intersectionOf _:genid31 .
 
-_:genid30 a rdf:List ;
+_:genid31 a rdf:List ;
 	rdf:first af-fn:AFFN_0000055 ;
-	rdf:rest _:genid28 .
+	rdf:rest _:genid29 .
 
-_:genid28 a rdf:List ;
-	rdf:first _:genid29 .
+_:genid29 a rdf:List ;
+	rdf:first _:genid30 .
 
-_:genid29 a owl:Restriction ;
+_:genid30 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
 	owl:someValuesFrom af-p:AFP_0003306 .
 
-af-p:AFP_0003306 a owl:Class .
+_:genid29 rdf:rest rdf:nil .
 
-_:genid28 rdf:rest rdf:nil .
-
-_:genid27 a owl:Class .
+_:genid28 a owl:Class .
 
 af-fn:AFFN_0000139 rdfs:subClassOf af-fn:AFFN_0000055 ;
 	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
@@ -494,6 +527,34 @@ af-fn:AFFN_0000139 rdfs:subClassOf af-fn:AFFN_0000055 ;
 	skos:definition "To keep a flow within limits. [NIST]" ;
 	skos:example "A vacuum bag contains debris vacuumed from a house. [NIST]" ;
 	skos:prefLabel "to contain" .
+# 
+# http://purl.allotrope.org/ontologies/function#AFFN_0000187
+
+af-fn:AFFN_0000187 a owl:Class ;
+	owl:equivalentClass _:genid32 .
+
+_:genid32 owl:intersectionOf _:genid35 .
+
+_:genid35 a rdf:List ;
+	rdf:first af-fn:AFFN_0000111 ;
+	rdf:rest _:genid33 .
+
+_:genid33 a rdf:List ;
+	rdf:first _:genid34 .
+
+_:genid34 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+	owl:someValuesFrom af-p:AFP_0003312 .
+
+_:genid33 rdf:rest rdf:nil .
+
+_:genid32 a owl:Class .
+
+af-fn:AFFN_0000187 rdfs:subClassOf af-fn:AFFN_0000111 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "conveying function" , "shifting function" , "to convey" , "to shift" , "transferring function" ;
+	skos:definition "To shift, or convey, a flow (material, energy, signal) from one place to another. [NIST]" ;
+	skos:prefLabel "to transfer" .
 # 
 # http://purl.allotrope.org/ontologies/material#AFM_0001034
 
@@ -535,16 +596,121 @@ af-m:AFM_0001097 a owl:Class ;
 	skos:prefLabel "chemical substance" .
 # 
 # http://purl.allotrope.org/ontologies/process#AFP_0003306
+
+af-p:AFP_0003306 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003551 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "being contained" ;
+	skos:definition "The state of keeping a flow within spatial limits. [Allotrope]" ;
+	skos:example "A vacuum bag contains debris vacuumed from a house. [NIST]" ;
+	skos:prefLabel "containing state" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003312
+
+af-p:AFP_0003312 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003348 , _:genid36 .
+
+_:genid36 owl:intersectionOf _:genid39 .
+
+_:genid39 a rdf:List ;
+	rdf:first af-p:AFP_0003348 ;
+	rdf:rest _:genid37 .
+
+_:genid37 a rdf:List ;
+	rdf:first _:genid38 .
+
+_:genid38 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0002344> ;
+	owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002> .
+
+<http://purl.obolibrary.org/obo/BFO_0000002> a owl:Class .
+
+_:genid37 rdf:rest rdf:nil .
+
+_:genid36 a owl:Class .
+
+af-p:AFP_0003312 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "deliver" , "transmitting" ;
+	skos:definition "Transferring is channeling a flow (material, energy, signal) from one place to another. [NIST]" ;
+	skos:prefLabel "transferring" .
 # 
 # http://purl.allotrope.org/ontologies/process#AFP_0003348
+
+af-p:AFP_0003348 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003620 , _:genid40 .
+
+_:genid40 a owl:Restriction ;
+	owl:onProperty <http://purl.obolibrary.org/obo/RO_0002337> ;
+	owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002> .
+
+af-p:AFP_0003348 af-x:AFX_0002798 "true"^^xsd:boolean ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "channeling" , "localization" , "spatial process" ;
+	skos:definition "A processing that affects the spatial location or orientation of some participants. [Allotrope]" ;
+	skos:prefLabel "localizing" .
 # 
 # http://purl.allotrope.org/ontologies/process#AFP_0003359
+
+af-p:AFP_0003359 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003620 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "Controlling is changing or regulating a flow in its magnitude. [NIST, Allotrope]" ;
+	skos:prefLabel "controlling" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003374
+
+af-p:AFP_0003374 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+<http://purl.obolibrary.org/obo/BFO_0000015> a owl:Class .
+
+af-p:AFP_0003374 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	dct:source "http://www.loa.istc.cnr.it/old/Papers/D18.pdf" ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "A state is a homomeric, cumulative process in which all the temporal parts are described by the same expression used for the whole. [Allotrope]" ;
+	skos:example "corroding" ;
+	skos:prefLabel "state" .
 # 
 # http://purl.allotrope.org/ontologies/process#AFP_0003486
+
+af-p:AFP_0003486 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003359 ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "modifying" ;
+	skos:definition "Changing is a processing by which an entity gains or looses parts, qualities, roles, dispositions, functions etc in a predetermined and fixed manner but maintains its identity. [Allotrope]" ;
+	skos:prefLabel "changing" .
 # 
 # http://purl.allotrope.org/ontologies/process#AFP_0003551
+
+af-p:AFP_0003551 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003563 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "storing" ;
+	skos:definition "Storing is containing or collecting flows to accumulate. [NIST]" ;
+	skos:prefLabel "storing state" .
 # 
 # http://purl.allotrope.org/ontologies/process#AFP_0003563
+
+af-p:AFP_0003563 a owl:Class ;
+	rdfs:subClassOf af-p:AFP_0003374 ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:altLabel "providing" ;
+	skos:definition "Providing is the state of accumulating or supplying a material or energy flow. [NIST]" ;
+	skos:prefLabel "providing state" .
+# 
+# http://purl.allotrope.org/ontologies/process#AFP_0003620
+
+af-p:AFP_0003620 a owl:Class ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
+	skos:definition "An activity is a process that is cumulative but not homomeric. [Allotrope, DOLCE]" ;
+	skos:editorialNote "Same as process in DOLCE. [Allotrope]" ;
+	skos:prefLabel "activity" .
 # 
 # http://purl.allotrope.org/ontologies/quality#AFQ_0000111
 
@@ -599,11 +765,8 @@ af-q:AFQ_0000115 a owl:Class ;
 # http://purl.allotrope.org/ontologies/quality#AFQ_0000168
 
 af-q:AFQ_0000168 a owl:Class ;
-	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000033> .
-
-<http://purl.obolibrary.org/obo/PATO_0000033> a owl:Class .
-
-af-q:AFQ_0000168 af-x:AFX_0002818 "true"^^xsd:boolean ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000033> ;
+	af-x:AFX_0002818 "true"^^xsd:boolean ;
 	dct:source "Green Book, 2nd ed.: IUPAC Quantities, Units and Symbols in Physical Chemistry. Second Edition, Blackwell Scientific Publications, Oxford, 1993." ;
 	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
 	skos:altLabel "amount concentration" , "amount concentration (quality)" , "amount of substance concentration" , "molar concentration" , "molarity" , "molarity (quality)" , "substance concentration" , "substance concentration (quality)" ;
@@ -614,9 +777,9 @@ af-q:AFQ_0000168 af-x:AFX_0002818 "true"^^xsd:boolean ;
 # http://purl.allotrope.org/ontologies/quality#AFQ_0000250
 
 af-q:AFQ_0000250 a owl:Class ;
-	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> , _:genid31 .
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> , _:genid41 .
 
-_:genid31 a owl:Restriction ;
+_:genid41 a owl:Restriction ;
 	owl:onProperty <http://purl.obolibrary.org/obo/RO_0000052> ;
 	owl:someValuesFrom af-m:AFM_0001097 .
 
@@ -627,15 +790,8 @@ af-q:AFQ_0000250 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2020/12
 # http://purl.allotrope.org/ontologies/quality#AFQ_0000256
 
 af-q:AFQ_0000256 a owl:Class ;
-	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000125> .
-
-<http://purl.obolibrary.org/obo/PATO_0000125> a owl:Class .
-
-af-q:AFQ_0000256 rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0002182> .
-
-<http://purl.obolibrary.org/obo/PATO_0002182> a owl:Class .
-
-af-q:AFQ_0000256 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2021/03/molecular-scale> ;
+	rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000125> , <http://purl.obolibrary.org/obo/PATO_0002182> ;
+	rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/perspective/REC/2021/03/molecular-scale> ;
 	skos:altLabel "atomic mass" , "molecular mass" ;
 	skos:changeNote "2020-03-16 Changed pref label. [Allotrope]" , "2020-03-16 Subclassed under pato:mass. [Allotrope]" ;
 	skos:definition "Molecular mass is a molecular quality inhered in a molecular entity that expresses its mass relative to 1/12 of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state and at rest. [Allotrope]" ;
@@ -659,6 +815,17 @@ af-r:AFR_0000916 a owl:Class ;
 	skos:definition "A classification is a proposition that categorizes things into classes or collections of things differentiated by some criteria. [Allotrope]" ;
 	skos:prefLabel "classification" .
 # 
+#  http://purl.allotrope.org/ontologies/result#AFR_0000923
+
+af-r:AFR_0000923 rdf:type owl:Class ;               
+                 rdfs:subClassOf iao:_0000030 ;                
+                 af-x:AFX_0002818 "true"^^xsd:boolean ;                      
+                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ,
+                                  <http://purl.allotrope.org/voc/afo/REC/2021/03/curation> ,
+                                  <http://purl.allotrope.org/voc/afo/perspective/REC/2021/03/organization> ;               
+                 skos:definition "A facet is a partial information that contains an aspect of some information content entity or parts of it when participating in some process. The facet abstracts of the concrete representation of this aspect of information. [Allotrope]" ;                
+                 skos:prefLabel "facet" .
+#
 # http://purl.allotrope.org/ontologies/result#AFR_0000992
 
 af-r:AFR_0000992 a owl:Class ;
@@ -1045,218 +1212,10 @@ af-rl:AFRL_0000533 a owl:Class ;
 	skos:altLabel "reaction mixture" ;
 	skos:definition "A reaction mixture role is a role of a chemical mixture undergoing some chemical reaction. [Allotrope]" ;
 	skos:prefLabel "reaction mixture role" .
-	
-###  http://purl.allotrope.org/ontologies/process#AFP_0003306
-
-af-p:AFP_0003306 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003551 ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:altLabel "being contained" ;
-                 
-                 skos:definition "The state of keeping a flow within spatial limits. [Allotrope]" ;
-                 
-                 skos:example "A vacuum bag contains debris vacuumed from a house. [NIST]" ;
-                 
-                 skos:prefLabel "containing state" .
-				 
-###  http://purl.allotrope.org/ontologies/process#AFP_0003348
-
-af-p:AFP_0003348 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003620 ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty ro:_0002337 ;
-                                   owl:someValuesFrom bfo:_0000002
-                                 ] ;
-                 
-                 af-x:AFX_0002798 "true"^^xsd:boolean ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:altLabel "channeling" ,
-                               "localization" ,
-                               "spatial process" ;
-                 
-                 skos:definition "A processing that affects the spatial location or orientation of some participants. [Allotrope]" ;
-                 
-                 skos:prefLabel "localizing" .
-
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003359
-
-af-p:AFP_0003359 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003620 ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:definition "Controlling is changing or regulating a flow in its magnitude. [NIST, Allotrope]" ;
-                 
-                 skos:prefLabel "controlling" .
-
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003486
-
-af-p:AFP_0003486 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003359 ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:altLabel "modifying" ;
-                 
-                 skos:definition "Changing is a processing by which an entity gains or looses parts, qualities, roles, dispositions, functions etc in a predetermined and fixed manner but maintains its identity. [Allotrope]" ;
-                 
-                 skos:prefLabel "changing" .
-
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003551
-
-af-p:AFP_0003551 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003563 ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:altLabel "storing" ;
-                 
-                 skos:definition "Storing is containing or collecting flows to accumulate. [NIST]" ;
-                 
-                 skos:prefLabel "storing state" .
-
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003563
-
-af-p:AFP_0003563 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003374 ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:altLabel "providing" ;
-                 
-                 skos:definition "Providing is the state of accumulating or supplying a material or energy flow. [NIST]" ;
-                 
-                 skos:prefLabel "providing state" .
-				 
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003620
-
-af-p:AFP_0003620 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf bfo:_0000015 ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:definition "An activity is a process that is cumulative but not homomeric. [Allotrope, DOLCE]" ;
-                 
-                 skos:editorialNote "Same as process in DOLCE. [Allotrope]" ;
-                 
-                 skos:prefLabel "activity" .
-
-
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003374
-
-af-p:AFP_0003374 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf bfo:_0000015 ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 dct:source "http://www.loa.istc.cnr.it/old/Papers/D18.pdf" ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:definition "A state is a homomeric, cumulative process in which all the temporal parts are described by the same expression used for the whole. [Allotrope]" ;
-                 
-                 skos:example "corroding" ;
-                 
-                 skos:prefLabel "state" .
-
-###  http://purl.allotrope.org/ontologies/equipment#AFE_0002168
-
-af-e:AFE_0002168 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-e:AFE_0000354 ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty ro:_0000085 ;
-                                   owl:someValuesFrom af-fn:AFFN_0000187
-                                 ] ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:definition "A transferring device is a device that is designed to transfer material. [Allotrope]" ;
-                 
-                 skos:prefLabel "transferring device" .
-
-	
-###  http://purl.allotrope.org/ontologies/function#AFFN_0000187
-
-af-fn:AFFN_0000187 rdf:type owl:Class ;
-                   
-                   owl:equivalentClass [ owl:intersectionOf ( af-fn:AFFN_0000111
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty bfo:_0000054 ;
-                                                                owl:someValuesFrom af-p:AFP_0003312
-                                                              ]
-                                                            ) ;
-                                         rdf:type owl:Class
-                                       ] ;
-                   
-                   rdfs:subClassOf af-fn:AFFN_0000111 ;
-                   
-                   rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                   
-                   skos:altLabel "conveying function" ,
-                                 "shifting function" ,
-                                 "to convey" ,
-                                 "to shift" ,
-                                 "transferring function" ;
-                   
-                   skos:definition "To shift, or convey, a flow (material, energy, signal) from one place to another. [NIST]" ;
-                   
-                   skos:prefLabel "to transfer" .
-
-
-###  http://purl.allotrope.org/ontologies/process#AFP_0003312
-
-af-p:AFP_0003312 rdf:type owl:Class ;
-                 
-                 rdfs:subClassOf af-p:AFP_0003348 ,
-                                 [ owl:intersectionOf ( af-p:AFP_0003348
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty ro:_0002344 ;
-                                                          owl:someValuesFrom bfo:_0000002
-                                                        ]
-                                                      ) ;
-                                   rdf:type owl:Class
-                                 ] ;
-                 
-                 af-x:AFX_0002818 "true"^^xsd:boolean ;
-                 
-                 rdfs:isDefinedBy <http://purl.allotrope.org/voc/afo/REC/2021/03/aft> ;
-                 
-                 skos:altLabel "deliver" ,
-                               "transmitting" ;
-                 
-                 skos:definition "Transferring is channeling a flow (material, energy, signal) from one place to another. [NIST]" ;
-                 
-                 skos:prefLabel "transferring" .				   
-				 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000002
+# 
+# http://purl.obolibrary.org/obo/BFO_0000015
 # 
 # http://purl.obolibrary.org/obo/BFO_0000019
 
@@ -1267,8 +1226,12 @@ af-p:AFP_0003312 rdf:type owl:Class ;
 <http://purl.obolibrary.org/obo/BFO_0000023> a owl:Class .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000034
+
+<http://purl.obolibrary.org/obo/BFO_0000034> a owl:Class .
 # 
 # http://purl.obolibrary.org/obo/BFO_0000040
+
+<http://purl.obolibrary.org/obo/BFO_0000040> a owl:Class .
 # 
 # http://purl.obolibrary.org/obo/CHMO_0000993
 
@@ -1298,13 +1261,19 @@ af-p:AFP_0003312 rdf:type owl:Class ;
 	skos:prefLabel "manufacturer role" .
 # 
 # http://purl.obolibrary.org/obo/PATO_0000033
+
+<http://purl.obolibrary.org/obo/PATO_0000033> a owl:Class .
 # 
 # http://purl.obolibrary.org/obo/PATO_0000051
 
 <http://purl.obolibrary.org/obo/PATO_0000051> a owl:Class .
 # 
 # http://purl.obolibrary.org/obo/PATO_0000125
+
+<http://purl.obolibrary.org/obo/PATO_0000125> a owl:Class .
 # 
 # http://purl.obolibrary.org/obo/PATO_0002182
+
+<http://purl.obolibrary.org/obo/PATO_0002182> a owl:Class .
 # 
 # Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
