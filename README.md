@@ -1,7 +1,7 @@
 # OPC: Ontology of Process Chemistry
 OPC: A formal ontology in the domain of process chemistry
 
-NOTE: OPC is now being named PROCO and available on a new GitHub website: https://github.com/proco-ontology/PROCO.
+NOTE: OPC is now named the PROcess Chemistry Ontology (PROCO), and available on a new GitHub website: https://github.com/proco-ontology/PROCO.
 
 The Ontology of Process Chemistry (OPC) is aimed to be a community-based ontology in the domain of process chemistry, which is a branch of chemistry (including pharmaceutical chemistry) that studies the development and optimization of the production processes for chemical compounds, and the scaling up of laboratory chemical reactions into commercially viable routes. Key considerations are product quality, process robustness, economics, environmental sustainability, regulatory compliance and safety.   
 
